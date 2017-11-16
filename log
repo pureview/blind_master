@@ -1,0 +1,25 @@
+# baseline=True, batch_size=50,iter=20000,dropout=0.5
+acc=99.17%
+# baseline=True, batch_size=50,iter=20000,dropout=1
+acc=99.00%
+# baseline=True, batch_size=50,iter=20000,dropout=1,mistake=0.1
+acc=53.81%
+# baseline=True, batch_size=50,iter=20000,dropout=0.5,mistake=0.1
+94.58% 
+# baseline=True, batch_size=50,iter=20000,dropout=1,mistake=0.2
+15.37%
+# baseline=True, batch_size=50,iter=20000,dropout=0.5,mistake=0.2
+59.4%
+
+##########################################################
+
+# vector= 200, batch_size=50, iter=20000, dropout=1
+acc=99.20%
+# vector= 200, batch_size=50, iter=20000, dropout=1,mistake=0.1
+acc=0.9894
+# vector= 200, batch_size=50, iter=20000, dropout=1,mistake=0.2
+acc=98.99%
+# vector= 200, batch_size=50, iter=20000, dropout=0.5,mistake=0.2
+acc=98.23%
+# vector= 200, batch_size=50, iter=20000, dropout=0.5,mistake=0.1
+acc=98.30%
