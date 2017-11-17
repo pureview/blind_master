@@ -6,6 +6,7 @@ import argparse
 import sys
 import os
 import tempfile
+import random
 from tensorflow.examples.tutorials.mnist import input_data
 from IPython import embed
 import tensorflow as tf
@@ -80,7 +81,7 @@ def main():
     y_ = tf.placeholder(tf.float32, [None, 10])
     y_conv, keep_prob = deepnn(x,out_dim=10)
     with tf.name_scope('loss'):
-        cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=y_,                                                                             logits=y_conv)
+        cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=y_,logits=y_conv)
     cross_entropy = tf.reduce_mean(cross_entropy)
     with tf.name_scope('adam_optimizer'):
         train_step = tf.train.AdamOptimizer(args.lr).minimize(cross_entropy)
@@ -91,10 +92,11 @@ def main():
     saver=tf.train.Saver()
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
-        for i in range(20000):
+        for i in range(args.num_iter):
             batch = mnist.train.next_batch(batch_size)
             np_labels=batch[1].copy()
-            m_inds=np.random.choice(np.arange(0,batch_size),int(batch_size*mistake_rate))
+            mistake_num=int(mistake_rate*batch_size)
+            m_inds=random.sample(list(range(batch_size)),mistake_num)
             for m_ind in m_inds:
                 origin_label=batch[1][m_ind]
                 origin_label=np.argmax(origin_label)
@@ -106,7 +108,7 @@ def main():
 
             if i % 100 == 0:
                 train_accuracy = accuracy.eval(feed_dict={
-                    x: batch[0], y_: batch[1], keep_prob: 1.0})
+                    x: batch[0], y_: np_labels, keep_prob: 1.0})
                 dump.write('step %d, training accuracy %g\n' % (i, train_accuracy))
                 print('step %d, training accuracy %g' % (i, train_accuracy))
             if i%1000==0:
@@ -134,6 +136,7 @@ def print_mnist(x):
 
 # vector algorithm
 def vector_loss():
+    debug_mode=False
     out_dim=args.out_dim
     num_label=10
     batch_size=50
@@ -150,28 +153,45 @@ def vector_loss():
     x = tf.placeholder(tf.float32, [None, 784])
     y_ = tf.placeholder(tf.float32, [None, out_dim])
     y_conv, keep_prob = deepnn(x,out_dim=out_dim)
-    loss=tf.nn.l2_loss(tf.random_uniform([out_dim],minval=0.1,maxval=1)*(y_conv-y_))
+    if args.random:
+        print('Using random gradient')
+        loss=tf.nn.l2_loss(tf.random_uniform([out_dim],minval=0.1,maxval=1)*(y_conv-y_))
+    else:
+        print('Not using random gradient')
+        loss=tf.nn.l2_loss(y_conv-y_)
     with tf.name_scope('adam_optimizer'):
         train_step = tf.train.AdamOptimizer(lr).minimize(loss)
     saver=tf.train.Saver()
     num_peer=int(out_dim/num_label) # how many value does one label have
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
-        for i in range(20000):
+        for i in range(args.num_iter):
             batch = mnist.train.next_batch(batch_size)
             np_labels=batch[1].copy()
-            m_inds=np.random.choice(np.arange(0,batch_size),int(batch_size*mistake_rate))
+            ############################################################################
+            # choose inds
+            mistake_num=int(mistake_rate*batch_size)
+            m_inds=random.sample(list(range(batch_size)),mistake_num)
+            ############################################################################
+            #print('len(m_inds)',len(m_inds))
+            if debug_mode: assert len(m_inds)==batch_size,str(m_inds)
             for m_ind in m_inds:
                 origin_label=batch[1][m_ind]
                 all_labels=list(range(num_label))
                 all_labels.remove(origin_label)
+                if debug_mode: assert origin_label not in all_labels,str(all_labels)
                 m_label=np.random.choice(all_labels)
+                if debug_mode: assert m_label!=origin_label
                 #embed()
                 np_labels[m_ind]=m_label
+                assert np_labels[m_ind]!=batch[1][m_ind]
+            #if debug_mode:print(np_labels);embed();exit()
             input_np_labels=np.zeros([batch_size,out_dim])
             for batch_ind in range(batch_size):
                 cur_label=np_labels[batch_ind]
                 input_np_labels[batch_ind,cur_label*num_peer:(cur_label+1)*num_peer]=1
+                if debug_mode:
+                    if np.argmax(input_np_labels[batch_ind])==batch[1][batch_ind]:embed();exit()
             if i % 100 == 0:
                 y_conv_val=sess.run(y_conv,feed_dict={
                     x: batch[0], keep_prob: 1.0})
@@ -186,7 +206,7 @@ def vector_loss():
                         if cur_label_sum>max_feature:
                             cur_label=label_ind
                             max_feature=cur_label_sum
-                    if cur_label==batch[1][batch_ind]:
+                    if cur_label==np_labels[batch_ind]:
                         train_acc+=1
                 print('i=%d,acc=%.4f'%(i,train_acc/batch_size))
                 dump.write('i=%d,acc=%.4f\n'%(i,train_acc/batch_size))
@@ -206,9 +226,18 @@ def vector_loss():
                             max_feature=cur_label_sum
                     if cur_label==test_labels[batch_ind]:
                         test_acc+=1
-                if i>15000:print('label:',test_labels[0]);print(test_out[0]);embed();exit()
+                #print('label:',test_labels[0]);print(test_out[0]);embed()
                 dump.write('\ni=%d,test_acc=%.4f\n\n'%(i,test_acc/test_num))
                 print('i=%d,test_acc=%.4f'%(i,test_acc/test_num))
+            #print('embed just before training');embed();exit()
+            if debug_mode and i%100==0:
+                same_count=0
+                for ind in range(batch_size):
+                    true_label=batch[1][ind]
+                    input_label=np.argmax(input_np_labels[ind])
+                    if true_label==input_label:
+                        same_count+=1
+                print('same count:',same_count)
             train_step.run(feed_dict={x: batch[0], y_: input_np_labels, keep_prob: drop_prob})
         print('Saving model...')
         saver.save(sess,'model/vector_',global_step=i)
@@ -246,6 +275,8 @@ if __name__ == '__main__':
     parser.add_argument('-file',type=str,default='experiment',help='specify the name to write experiment result')
     parser.add_argument('-lr',type=float,default=0.0001,help='specify learning rate')
     parser.add_argument('-dynamic_lr',action='store_true',help='specify to open dynamic learning rate mode on')
+    parser.add_argument('-random',action='store_true',help='specify whether enable random gradient')
+    parser.add_argument('-num_iter',type=int,default=30000,help='specify max iter')
     args=parser.parse_args()
     os.environ["CUDA_VISIBLE_DEVICES"]=args.gpu
     # closure get command-line args

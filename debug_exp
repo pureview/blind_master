@@ -1,1215 +1,4198 @@
-#configure: vector=False,batch_size=50,drop_prob=0.5000,mistake_rate=0.8000
+#configure: vector=True,out_dim=10,batch_size=50,drop_prob=1.0000,mistake_rate=0.7000,dynamic_lr=0
+i=0,acc=0.0800
+
+i=0,test_acc=0.1148
+
+i=100,acc=0.1000
+i=200,acc=0.1000
+i=300,acc=0.0800
+i=400,acc=0.0800
+i=500,acc=0.0800
+i=600,acc=0.0600
+i=700,acc=0.1000
+i=800,acc=0.1400
+i=900,acc=0.0400
+i=1000,acc=0.1400
+
+i=1000,test_acc=0.2121
+
+i=1100,acc=0.1000
+i=1200,acc=0.1000
+i=1300,acc=0.1200
+i=1400,acc=0.1200
+i=1500,acc=0.1800
+i=1600,acc=0.0800
+i=1700,acc=0.2600
+i=1800,acc=0.2200
+i=1900,acc=0.1400
+i=2000,acc=0.1200
+
+i=2000,test_acc=0.3242
+
+i=2100,acc=0.1800
+i=2200,acc=0.1200
+i=2300,acc=0.2000
+i=2400,acc=0.1600
+i=2500,acc=0.1800
+i=2600,acc=0.2000
+i=2700,acc=0.1600
+i=2800,acc=0.0800
+i=2900,acc=0.1800
+i=3000,acc=0.2200
+
+i=3000,test_acc=0.4130
+
+i=3100,acc=0.2200
+i=3200,acc=0.2800
+i=3300,acc=0.0800
+i=3400,acc=0.2000
+i=3500,acc=0.1600
+i=3600,acc=0.2200
+i=3700,acc=0.1200
+i=3800,acc=0.1800
+i=3900,acc=0.2000
+i=4000,acc=0.1800
+
+i=4000,test_acc=0.5146
+
+i=4100,acc=0.1200
+i=4200,acc=0.1400
+i=4300,acc=0.1400
+i=4400,acc=0.2000
+i=4500,acc=0.1400
+i=4600,acc=0.2200
+i=4700,acc=0.1600
+i=4800,acc=0.2600
+i=4900,acc=0.2200
+i=5000,acc=0.2200
+
+i=5000,test_acc=0.5645
+
+i=5100,acc=0.2400
+i=5200,acc=0.2000
+i=5300,acc=0.2200
+i=5400,acc=0.2400
+i=5500,acc=0.1400
+i=5600,acc=0.2400
+i=5700,acc=0.1600
+i=5800,acc=0.2200
+i=5900,acc=0.2000
+i=6000,acc=0.3000
+
+i=6000,test_acc=0.6454
+
+i=6100,acc=0.1600
+i=6200,acc=0.2200
+i=6300,acc=0.2800
+i=6400,acc=0.3000
+i=6500,acc=0.1800
+i=6600,acc=0.2200
+i=6700,acc=0.1800
+i=6800,acc=0.2600
+i=6900,acc=0.2400
+i=7000,acc=0.2200
+
+i=7000,test_acc=0.7274
+
+i=7100,acc=0.2600
+i=7200,acc=0.2200
+i=7300,acc=0.2400
+i=7400,acc=0.2000
+i=7500,acc=0.2400
+i=7600,acc=0.2200
+i=7700,acc=0.2600
+i=7800,acc=0.3000
+i=7900,acc=0.2000
+i=8000,acc=0.1800
+
+i=8000,test_acc=0.7192
+
+i=8100,acc=0.2200
+i=8200,acc=0.2600
+i=8300,acc=0.3200
+i=8400,acc=0.3000
+i=8500,acc=0.2400
+i=8600,acc=0.2400
+i=8700,acc=0.3000
+i=8800,acc=0.2800
+i=8900,acc=0.2600
+i=9000,acc=0.3200
+
+i=9000,test_acc=0.8541
+
+i=9100,acc=0.2800
+i=9200,acc=0.2800
+i=9300,acc=0.2600
+i=9400,acc=0.2800
+i=9500,acc=0.2800
+i=9600,acc=0.2600
+i=9700,acc=0.3000
+i=9800,acc=0.2600
+i=9900,acc=0.3200
+i=10000,acc=0.2600
+
+i=10000,test_acc=0.8558
+
+i=10100,acc=0.2400
+i=10200,acc=0.3200
+i=10300,acc=0.2600
+i=10400,acc=0.2200
+i=10500,acc=0.2800
+i=10600,acc=0.2800
+i=10700,acc=0.2600
+i=10800,acc=0.2000
+i=10900,acc=0.2600
+i=11000,acc=0.3200
+
+i=11000,test_acc=0.9055
+
+i=11100,acc=0.3200
+i=11200,acc=0.3000
+i=11300,acc=0.2600
+i=11400,acc=0.2400
+i=11500,acc=0.3200
+i=11600,acc=0.2800
+i=11700,acc=0.2800
+i=11800,acc=0.2800
+i=11900,acc=0.3000
+i=12000,acc=0.2600
+
+i=12000,test_acc=0.9232
+
+i=12100,acc=0.3000
+i=12200,acc=0.3000
+i=12300,acc=0.3000
+i=12400,acc=0.2200
+i=12500,acc=0.3000
+i=12600,acc=0.2600
+i=12700,acc=0.2800
+i=12800,acc=0.2600
+i=12900,acc=0.2800
+i=13000,acc=0.2800
+
+i=13000,test_acc=0.9076
+
+i=13100,acc=0.2600
+i=13200,acc=0.3000
+i=13300,acc=0.3000
+i=13400,acc=0.2800
+i=13500,acc=0.2800
+i=13600,acc=0.2800
+i=13700,acc=0.3000
+i=13800,acc=0.2800
+i=13900,acc=0.2200
+i=14000,acc=0.2800
+
+i=14000,test_acc=0.9339
+
+i=14100,acc=0.3000
+i=14200,acc=0.2400
+i=14300,acc=0.3000
+i=14400,acc=0.3200
+i=14500,acc=0.2800
+i=14600,acc=0.3000
+i=14700,acc=0.2800
+i=14800,acc=0.2800
+i=14900,acc=0.2800
+i=15000,acc=0.2800
+
+i=15000,test_acc=0.9358
+
+i=15100,acc=0.2800
+i=15200,acc=0.2800
+i=15300,acc=0.2800
+i=15400,acc=0.2800
+i=15500,acc=0.2800
+i=15600,acc=0.2800
+i=15700,acc=0.3000
+i=15800,acc=0.3000
+i=15900,acc=0.2600
+i=16000,acc=0.2400
+
+i=16000,test_acc=0.9391
+
+i=16100,acc=0.2800
+i=16200,acc=0.2600
+i=16300,acc=0.3000
+i=16400,acc=0.2800
+i=16500,acc=0.2600
+i=16600,acc=0.2600
+i=16700,acc=0.3000
+i=16800,acc=0.3000
+i=16900,acc=0.2800
+i=17000,acc=0.2800
+
+i=17000,test_acc=0.9418
+
+i=17100,acc=0.2200
+i=17200,acc=0.2600
+i=17300,acc=0.2800
+i=17400,acc=0.3000
+i=17500,acc=0.3000
+i=17600,acc=0.3200
+i=17700,acc=0.2800
+i=17800,acc=0.2800
+i=17900,acc=0.3000
+i=18000,acc=0.2800
+
+i=18000,test_acc=0.9460
+
+i=18100,acc=0.3000
+i=18200,acc=0.2800
+i=18300,acc=0.3000
+i=18400,acc=0.3000
+i=18500,acc=0.2800
+i=18600,acc=0.3200
+i=18700,acc=0.2600
+i=18800,acc=0.2800
+i=18900,acc=0.3000
+i=19000,acc=0.2800
+
+i=19000,test_acc=0.9495
+
+i=19100,acc=0.2800
+i=19200,acc=0.2800
+i=19300,acc=0.3000
+i=19400,acc=0.3000
+i=19500,acc=0.3000
+i=19600,acc=0.2800
+i=19700,acc=0.3000
+i=19800,acc=0.3000
+i=19900,acc=0.3200
+i=20000,acc=0.3000
+
+i=20000,test_acc=0.9341
+
+i=20100,acc=0.2400
+i=20200,acc=0.3000
+i=20300,acc=0.2600
+i=20400,acc=0.3000
+i=20500,acc=0.3000
+i=20600,acc=0.2600
+i=20700,acc=0.2600
+i=20800,acc=0.3000
+i=20900,acc=0.2800
+i=21000,acc=0.2800
+
+i=21000,test_acc=0.9562
+
+i=21100,acc=0.3200
+i=21200,acc=0.3000
+i=21300,acc=0.3200
+i=21400,acc=0.3000
+i=21500,acc=0.2800
+i=21600,acc=0.2800
+i=21700,acc=0.2800
+i=21800,acc=0.2800
+i=21900,acc=0.2800
+i=22000,acc=0.2800
+
+i=22000,test_acc=0.9558
+
+i=22100,acc=0.3000
+i=22200,acc=0.2800
+i=22300,acc=0.3000
+i=22400,acc=0.3000
+i=22500,acc=0.3200
+i=22600,acc=0.3000
+i=22700,acc=0.2400
+i=22800,acc=0.3000
+i=22900,acc=0.2800
+i=23000,acc=0.3200
+
+i=23000,test_acc=0.9561
+
+i=23100,acc=0.2600
+i=23200,acc=0.3000
+i=23300,acc=0.2800
+i=23400,acc=0.3000
+i=23500,acc=0.3000
+i=23600,acc=0.3000
+i=23700,acc=0.3000
+i=23800,acc=0.2600
+i=23900,acc=0.3000
+i=24000,acc=0.3000
+
+i=24000,test_acc=0.9643
+
+i=24100,acc=0.2800
+i=24200,acc=0.3000
+i=24300,acc=0.3000
+i=24400,acc=0.3000
+i=24500,acc=0.3000
+i=24600,acc=0.3000
+i=24700,acc=0.3000
+i=24800,acc=0.3000
+i=24900,acc=0.3000
+i=25000,acc=0.3000
+
+i=25000,test_acc=0.9583
+
+i=25100,acc=0.2800
+i=25200,acc=0.2600
+i=25300,acc=0.2800
+i=25400,acc=0.3000
+i=25500,acc=0.3000
+i=25600,acc=0.2800
+i=25700,acc=0.3200
+i=25800,acc=0.3000
+i=25900,acc=0.3000
+i=26000,acc=0.3000
+
+i=26000,test_acc=0.9660
+
+i=26100,acc=0.3000
+i=26200,acc=0.2800
+i=26300,acc=0.3200
+i=26400,acc=0.2800
+i=26500,acc=0.3000
+i=26600,acc=0.3000
+i=26700,acc=0.2800
+i=26800,acc=0.2800
+i=26900,acc=0.3200
+i=27000,acc=0.3000
+
+i=27000,test_acc=0.9639
+
+i=27100,acc=0.2400
+i=27200,acc=0.3000
+i=27300,acc=0.2800
+i=27400,acc=0.3000
+i=27500,acc=0.3000
+i=27600,acc=0.3000
+i=27700,acc=0.2800
+i=27800,acc=0.2800
+i=27900,acc=0.2800
+i=28000,acc=0.2800
+
+i=28000,test_acc=0.9668
+
+i=28100,acc=0.2400
+i=28200,acc=0.2800
+i=28300,acc=0.3000
+i=28400,acc=0.3000
+i=28500,acc=0.3000
+i=28600,acc=0.3000
+i=28700,acc=0.3000
+i=28800,acc=0.2800
+i=28900,acc=0.3000
+i=29000,acc=0.3000
+
+i=29000,test_acc=0.9671
+
+i=29100,acc=0.2800
+i=29200,acc=0.2600
+i=29300,acc=0.3000
+i=29400,acc=0.3000
+i=29500,acc=0.3000
+i=29600,acc=0.3000
+i=29700,acc=0.2800
+i=29800,acc=0.3000
+i=29900,acc=0.3200
+i=30000,acc=0.2800
+
+i=30000,test_acc=0.9656
+
+i=30100,acc=0.2800
+i=30200,acc=0.3200
+i=30300,acc=0.2800
+i=30400,acc=0.2800
+i=30500,acc=0.2800
+i=30600,acc=0.3000
+i=30700,acc=0.2800
+i=30800,acc=0.2800
+i=30900,acc=0.3000
+i=31000,acc=0.3000
+
+i=31000,test_acc=0.9678
+
+i=31100,acc=0.3000
+i=31200,acc=0.3000
+i=31300,acc=0.3000
+i=31400,acc=0.2800
+i=31500,acc=0.3000
+i=31600,acc=0.2800
+i=31700,acc=0.3000
+i=31800,acc=0.3000
+i=31900,acc=0.2800
+i=32000,acc=0.2600
+
+i=32000,test_acc=0.9647
+
+i=32100,acc=0.3000
+i=32200,acc=0.3000
+i=32300,acc=0.2800
+i=32400,acc=0.3000
+i=32500,acc=0.2800
+i=32600,acc=0.2800
+i=32700,acc=0.3000
+i=32800,acc=0.3000
+i=32900,acc=0.2800
+i=33000,acc=0.2800
+
+i=33000,test_acc=0.9694
+
+i=33100,acc=0.3000
+i=33200,acc=0.3000
+i=33300,acc=0.2800
+i=33400,acc=0.3000
+i=33500,acc=0.3000
+i=33600,acc=0.3000
+i=33700,acc=0.2800
+i=33800,acc=0.2800
+i=33900,acc=0.2600
+i=34000,acc=0.3200
+
+i=34000,test_acc=0.9725
+
+i=34100,acc=0.3000
+i=34200,acc=0.3000
+i=34300,acc=0.2800
+i=34400,acc=0.3000
+i=34500,acc=0.2600
+i=34600,acc=0.3000
+i=34700,acc=0.3000
+i=34800,acc=0.3000
+i=34900,acc=0.3000
+i=35000,acc=0.3000
+
+i=35000,test_acc=0.9714
+
+i=35100,acc=0.2400
+i=35200,acc=0.2800
+i=35300,acc=0.3000
+i=35400,acc=0.2800
+i=35500,acc=0.3000
+i=35600,acc=0.3000
+i=35700,acc=0.3000
+i=35800,acc=0.3200
+i=35900,acc=0.3000
+i=36000,acc=0.3000
+
+i=36000,test_acc=0.9709
+
+i=36100,acc=0.3000
+i=36200,acc=0.2800
+i=36300,acc=0.3000
+i=36400,acc=0.2800
+i=36500,acc=0.3000
+i=36600,acc=0.2800
+i=36700,acc=0.2800
+i=36800,acc=0.3000
+i=36900,acc=0.3000
+i=37000,acc=0.2800
+
+i=37000,test_acc=0.9744
+
+i=37100,acc=0.3000
+i=37200,acc=0.3000
+i=37300,acc=0.2800
+i=37400,acc=0.3000
+i=37500,acc=0.3000
+i=37600,acc=0.2800
+i=37700,acc=0.3000
+i=37800,acc=0.3000
+i=37900,acc=0.3000
+i=38000,acc=0.3000
+
+i=38000,test_acc=0.9729
+
+i=38100,acc=0.3000
+i=38200,acc=0.3000
+i=38300,acc=0.3000
+i=38400,acc=0.3000
+i=38500,acc=0.2800
+i=38600,acc=0.3000
+i=38700,acc=0.3000
+i=38800,acc=0.3000
+i=38900,acc=0.3000
+i=39000,acc=0.3000
+
+i=39000,test_acc=0.9770
+
+i=39100,acc=0.3000
+i=39200,acc=0.2600
+i=39300,acc=0.2800
+i=39400,acc=0.3200
+i=39500,acc=0.3000
+i=39600,acc=0.3000
+i=39700,acc=0.3000
+i=39800,acc=0.3000
+i=39900,acc=0.3000
+i=40000,acc=0.3000
+
+i=40000,test_acc=0.9748
+
+i=40100,acc=0.3000
+i=40200,acc=0.3000
+i=40300,acc=0.3000
+i=40400,acc=0.3000
+i=40500,acc=0.3000
+i=40600,acc=0.2600
+i=40700,acc=0.3000
+i=40800,acc=0.3000
+i=40900,acc=0.3000
+i=41000,acc=0.3000
+
+i=41000,test_acc=0.9735
+
+i=41100,acc=0.2600
+i=41200,acc=0.3000
+i=41300,acc=0.3200
+i=41400,acc=0.3000
+i=41500,acc=0.3000
+i=41600,acc=0.2600
+i=41700,acc=0.3000
+i=41800,acc=0.3000
+i=41900,acc=0.3000
+i=42000,acc=0.3000
+
+i=42000,test_acc=0.9760
+
+i=42100,acc=0.3000
+i=42200,acc=0.3000
+i=42300,acc=0.2800
+i=42400,acc=0.3200
+i=42500,acc=0.3000
+i=42600,acc=0.3000
+i=42700,acc=0.3000
+i=42800,acc=0.3000
+i=42900,acc=0.2800
+i=43000,acc=0.3200
+
+i=43000,test_acc=0.9747
+
+i=43100,acc=0.3000
+i=43200,acc=0.2600
+i=43300,acc=0.2800
+i=43400,acc=0.3000
+i=43500,acc=0.3000
+i=43600,acc=0.3000
+i=43700,acc=0.3000
+i=43800,acc=0.3000
+i=43900,acc=0.3000
+i=44000,acc=0.2800
+
+i=44000,test_acc=0.9765
+
+i=44100,acc=0.2400
+i=44200,acc=0.3000
+i=44300,acc=0.3000
+i=44400,acc=0.3000
+i=44500,acc=0.2800
+i=44600,acc=0.2600
+i=44700,acc=0.3000
+i=44800,acc=0.3000
+i=44900,acc=0.2800
+i=45000,acc=0.2600
+
+i=45000,test_acc=0.9763
+
+i=45100,acc=0.3000
+i=45200,acc=0.3000
+i=45300,acc=0.3000
+i=45400,acc=0.3000
+i=45500,acc=0.3000
+i=45600,acc=0.3200
+i=45700,acc=0.2800
+i=45800,acc=0.3000
+i=45900,acc=0.3000
+i=46000,acc=0.3200
+
+i=46000,test_acc=0.9753
+
+i=46100,acc=0.2800
+i=46200,acc=0.3000
+i=46300,acc=0.2800
+i=46400,acc=0.3000
+i=46500,acc=0.3000
+i=46600,acc=0.2800
+i=46700,acc=0.3000
+i=46800,acc=0.3000
+i=46900,acc=0.3000
+i=47000,acc=0.2800
+
+i=47000,test_acc=0.9758
+
+i=47100,acc=0.2600
+i=47200,acc=0.3200
+i=47300,acc=0.2800
+i=47400,acc=0.3000
+i=47500,acc=0.3000
+i=47600,acc=0.3000
+i=47700,acc=0.3000
+i=47800,acc=0.3000
+i=47900,acc=0.3000
+i=48000,acc=0.3000
+
+i=48000,test_acc=0.9740
+
+i=48100,acc=0.3000
+i=48200,acc=0.3000
+i=48300,acc=0.3200
+i=48400,acc=0.3000
+i=48500,acc=0.2800
+i=48600,acc=0.3000
+i=48700,acc=0.3000
+i=48800,acc=0.3000
+i=48900,acc=0.3000
+i=49000,acc=0.3000
+
+i=49000,test_acc=0.9770
+
+i=49100,acc=0.3000
+i=49200,acc=0.3000
+i=49300,acc=0.3000
+i=49400,acc=0.3000
+i=49500,acc=0.3200
+i=49600,acc=0.2800
+i=49700,acc=0.3200
+i=49800,acc=0.3000
+i=49900,acc=0.3000
+
+test_acc=0.9750
+
+#configure: vector=False,batch_size=50,drop_prob=1.0000,mistake_rate=0.7000
+step 0, training accuracy 0.1
+
+i=0,test_acc=0.1048
+
+step 100, training accuracy 0.22
+step 200, training accuracy 0.16
+step 300, training accuracy 0.2
+step 400, training accuracy 0.16
+step 500, training accuracy 0.16
+step 600, training accuracy 0.22
+step 700, training accuracy 0.28
+step 800, training accuracy 0.2
+step 900, training accuracy 0.2
+step 1000, training accuracy 0.16
+
+i=1000,test_acc=0.7497
+
+step 1100, training accuracy 0.28
+step 1200, training accuracy 0.24
+step 1300, training accuracy 0.2
+step 1400, training accuracy 0.3
+step 1500, training accuracy 0.3
+step 1600, training accuracy 0.28
+step 1700, training accuracy 0.28
+step 1800, training accuracy 0.28
+step 1900, training accuracy 0.26
+step 2000, training accuracy 0.32
+
+i=2000,test_acc=0.845
+
+step 2100, training accuracy 0.24
+step 2200, training accuracy 0.24
+step 2300, training accuracy 0.32
+step 2400, training accuracy 0.32
+step 2500, training accuracy 0.32
+step 2600, training accuracy 0.28
+step 2700, training accuracy 0.28
+step 2800, training accuracy 0.26
+step 2900, training accuracy 0.24
+step 3000, training accuracy 0.3
+
+i=3000,test_acc=0.9121
+
+step 3100, training accuracy 0.28
+step 3200, training accuracy 0.26
+step 3300, training accuracy 0.24
+step 3400, training accuracy 0.32
+step 3500, training accuracy 0.32
+step 3600, training accuracy 0.26
+step 3700, training accuracy 0.28
+step 3800, training accuracy 0.28
+step 3900, training accuracy 0.3
+step 4000, training accuracy 0.28
+
+i=4000,test_acc=0.9219
+
+step 4100, training accuracy 0.28
+step 4200, training accuracy 0.3
+step 4300, training accuracy 0.26
+step 4400, training accuracy 0.3
+step 4500, training accuracy 0.22
+step 4600, training accuracy 0.3
+step 4700, training accuracy 0.32
+step 4800, training accuracy 0.3
+step 4900, training accuracy 0.3
+step 5000, training accuracy 0.28
+
+i=5000,test_acc=0.9371
+
+step 5100, training accuracy 0.3
+step 5200, training accuracy 0.28
+step 5300, training accuracy 0.3
+step 5400, training accuracy 0.24
+step 5500, training accuracy 0.3
+step 5600, training accuracy 0.28
+step 5700, training accuracy 0.3
+step 5800, training accuracy 0.3
+step 5900, training accuracy 0.28
+step 6000, training accuracy 0.3
+
+i=6000,test_acc=0.9438
+
+step 6100, training accuracy 0.26
+step 6200, training accuracy 0.28
+step 6300, training accuracy 0.28
+step 6400, training accuracy 0.3
+step 6500, training accuracy 0.28
+step 6600, training accuracy 0.3
+step 6700, training accuracy 0.28
+step 6800, training accuracy 0.3
+step 6900, training accuracy 0.28
+step 7000, training accuracy 0.26
+
+i=7000,test_acc=0.9559
+
+step 7100, training accuracy 0.26
+step 7200, training accuracy 0.28
+step 7300, training accuracy 0.26
+step 7400, training accuracy 0.3
+step 7500, training accuracy 0.26
+step 7600, training accuracy 0.3
+step 7700, training accuracy 0.28
+step 7800, training accuracy 0.28
+step 7900, training accuracy 0.26
+step 8000, training accuracy 0.3
+
+i=8000,test_acc=0.9578
+
+step 8100, training accuracy 0.3
+step 8200, training accuracy 0.28
+step 8300, training accuracy 0.28
+step 8400, training accuracy 0.3
+step 8500, training accuracy 0.32
+step 8600, training accuracy 0.32
+step 8700, training accuracy 0.3
+step 8800, training accuracy 0.26
+step 8900, training accuracy 0.3
+step 9000, training accuracy 0.28
+
+i=9000,test_acc=0.9626
+
+step 9100, training accuracy 0.32
+step 9200, training accuracy 0.3
+step 9300, training accuracy 0.24
+step 9400, training accuracy 0.3
+step 9500, training accuracy 0.28
+step 9600, training accuracy 0.3
+step 9700, training accuracy 0.26
+step 9800, training accuracy 0.32
+step 9900, training accuracy 0.28
+step 10000, training accuracy 0.28
+
+i=10000,test_acc=0.956
+
+step 10100, training accuracy 0.3
+step 10200, training accuracy 0.28
+step 10300, training accuracy 0.3
+step 10400, training accuracy 0.26
+step 10500, training accuracy 0.3
+step 10600, training accuracy 0.28
+step 10700, training accuracy 0.3
+step 10800, training accuracy 0.3
+step 10900, training accuracy 0.3
+step 11000, training accuracy 0.3
+
+i=11000,test_acc=0.9678
+
+step 11100, training accuracy 0.3
+step 11200, training accuracy 0.3
+step 11300, training accuracy 0.32
+step 11400, training accuracy 0.3
+step 11500, training accuracy 0.3
+step 11600, training accuracy 0.3
+step 11700, training accuracy 0.3
+step 11800, training accuracy 0.3
+step 11900, training accuracy 0.3
+step 12000, training accuracy 0.3
+
+i=12000,test_acc=0.9667
+
+step 12100, training accuracy 0.3
+step 12200, training accuracy 0.3
+step 12300, training accuracy 0.3
+step 12400, training accuracy 0.3
+step 12500, training accuracy 0.3
+step 12600, training accuracy 0.3
+step 12700, training accuracy 0.3
+step 12800, training accuracy 0.3
+step 12900, training accuracy 0.28
+step 13000, training accuracy 0.28
+
+i=13000,test_acc=0.9673
+
+step 13100, training accuracy 0.3
+step 13200, training accuracy 0.3
+step 13300, training accuracy 0.28
+step 13400, training accuracy 0.3
+step 13500, training accuracy 0.3
+step 13600, training accuracy 0.3
+step 13700, training accuracy 0.3
+step 13800, training accuracy 0.3
+step 13900, training accuracy 0.3
+step 14000, training accuracy 0.3
+
+i=14000,test_acc=0.971
+
+step 14100, training accuracy 0.3
+step 14200, training accuracy 0.3
+step 14300, training accuracy 0.26
+step 14400, training accuracy 0.3
+step 14500, training accuracy 0.3
+step 14600, training accuracy 0.3
+step 14700, training accuracy 0.26
+step 14800, training accuracy 0.3
+step 14900, training accuracy 0.28
+step 15000, training accuracy 0.28
+
+i=15000,test_acc=0.9673
+
+step 15100, training accuracy 0.3
+step 15200, training accuracy 0.28
+step 15300, training accuracy 0.3
+step 15400, training accuracy 0.3
+step 15500, training accuracy 0.3
+step 15600, training accuracy 0.32
+step 15700, training accuracy 0.3
+step 15800, training accuracy 0.3
+step 15900, training accuracy 0.28
+step 16000, training accuracy 0.32
+
+i=16000,test_acc=0.9682
+
+step 16100, training accuracy 0.3
+step 16200, training accuracy 0.26
+step 16300, training accuracy 0.3
+step 16400, training accuracy 0.3
+step 16500, training accuracy 0.28
+step 16600, training accuracy 0.3
+step 16700, training accuracy 0.3
+step 16800, training accuracy 0.3
+step 16900, training accuracy 0.26
+step 17000, training accuracy 0.3
+
+i=17000,test_acc=0.9732
+
+step 17100, training accuracy 0.32
+step 17200, training accuracy 0.3
+step 17300, training accuracy 0.3
+step 17400, training accuracy 0.28
+step 17500, training accuracy 0.3
+step 17600, training accuracy 0.3
+step 17700, training accuracy 0.3
+step 17800, training accuracy 0.28
+step 17900, training accuracy 0.26
+step 18000, training accuracy 0.26
+
+i=18000,test_acc=0.975
+
+step 18100, training accuracy 0.3
+step 18200, training accuracy 0.3
+step 18300, training accuracy 0.3
+step 18400, training accuracy 0.3
+step 18500, training accuracy 0.3
+step 18600, training accuracy 0.3
+step 18700, training accuracy 0.3
+step 18800, training accuracy 0.28
+step 18900, training accuracy 0.3
+step 19000, training accuracy 0.3
+
+i=19000,test_acc=0.9758
+
+step 19100, training accuracy 0.3
+step 19200, training accuracy 0.3
+step 19300, training accuracy 0.3
+step 19400, training accuracy 0.3
+step 19500, training accuracy 0.3
+step 19600, training accuracy 0.3
+step 19700, training accuracy 0.28
+step 19800, training accuracy 0.28
+step 19900, training accuracy 0.3
+step 20000, training accuracy 0.3
+
+i=20000,test_acc=0.9774
+
+step 20100, training accuracy 0.3
+step 20200, training accuracy 0.3
+step 20300, training accuracy 0.3
+step 20400, training accuracy 0.28
+step 20500, training accuracy 0.3
+step 20600, training accuracy 0.28
+step 20700, training accuracy 0.32
+step 20800, training accuracy 0.3
+step 20900, training accuracy 0.3
+step 21000, training accuracy 0.3
+
+i=21000,test_acc=0.9739
+
+step 21100, training accuracy 0.3
+step 21200, training accuracy 0.28
+step 21300, training accuracy 0.28
+step 21400, training accuracy 0.3
+step 21500, training accuracy 0.3
+step 21600, training accuracy 0.3
+step 21700, training accuracy 0.3
+step 21800, training accuracy 0.3
+step 21900, training accuracy 0.3
+step 22000, training accuracy 0.3
+
+i=22000,test_acc=0.9756
+
+step 22100, training accuracy 0.28
+step 22200, training accuracy 0.3
+step 22300, training accuracy 0.3
+step 22400, training accuracy 0.3
+step 22500, training accuracy 0.28
+step 22600, training accuracy 0.3
+step 22700, training accuracy 0.3
+step 22800, training accuracy 0.3
+step 22900, training accuracy 0.3
+step 23000, training accuracy 0.3
+
+i=23000,test_acc=0.9775
+
+step 23100, training accuracy 0.3
+step 23200, training accuracy 0.3
+step 23300, training accuracy 0.3
+step 23400, training accuracy 0.3
+step 23500, training accuracy 0.3
+step 23600, training accuracy 0.3
+step 23700, training accuracy 0.3
+step 23800, training accuracy 0.3
+step 23900, training accuracy 0.26
+step 24000, training accuracy 0.28
+
+i=24000,test_acc=0.9754
+
+step 24100, training accuracy 0.3
+step 24200, training accuracy 0.26
+step 24300, training accuracy 0.3
+step 24400, training accuracy 0.28
+step 24500, training accuracy 0.32
+step 24600, training accuracy 0.28
+step 24700, training accuracy 0.3
+step 24800, training accuracy 0.3
+step 24900, training accuracy 0.3
+step 25000, training accuracy 0.3
+
+i=25000,test_acc=0.9774
+
+step 25100, training accuracy 0.3
+step 25200, training accuracy 0.3
+step 25300, training accuracy 0.3
+step 25400, training accuracy 0.3
+step 25500, training accuracy 0.3
+step 25600, training accuracy 0.28
+step 25700, training accuracy 0.3
+step 25800, training accuracy 0.3
+step 25900, training accuracy 0.3
+step 26000, training accuracy 0.28
+
+i=26000,test_acc=0.9769
+
+step 26100, training accuracy 0.3
+step 26200, training accuracy 0.32
+step 26300, training accuracy 0.3
+step 26400, training accuracy 0.3
+step 26500, training accuracy 0.3
+step 26600, training accuracy 0.3
+step 26700, training accuracy 0.3
+step 26800, training accuracy 0.3
+step 26900, training accuracy 0.3
+step 27000, training accuracy 0.3
+
+i=27000,test_acc=0.9804
+
+step 27100, training accuracy 0.3
+step 27200, training accuracy 0.28
+step 27300, training accuracy 0.3
+step 27400, training accuracy 0.32
+step 27500, training accuracy 0.28
+step 27600, training accuracy 0.28
+step 27700, training accuracy 0.3
+step 27800, training accuracy 0.3
+step 27900, training accuracy 0.3
+step 28000, training accuracy 0.3
+
+i=28000,test_acc=0.9775
+
+step 28100, training accuracy 0.3
+step 28200, training accuracy 0.3
+step 28300, training accuracy 0.3
+step 28400, training accuracy 0.28
+step 28500, training accuracy 0.3
+step 28600, training accuracy 0.28
+step 28700, training accuracy 0.28
+step 28800, training accuracy 0.3
+step 28900, training accuracy 0.28
+step 29000, training accuracy 0.3
+
+i=29000,test_acc=0.9796
+
+step 29100, training accuracy 0.3
+step 29200, training accuracy 0.28
+step 29300, training accuracy 0.3
+step 29400, training accuracy 0.3
+step 29500, training accuracy 0.28
+step 29600, training accuracy 0.28
+step 29700, training accuracy 0.3
+step 29800, training accuracy 0.26
+step 29900, training accuracy 0.3
+step 30000, training accuracy 0.28
+
+i=30000,test_acc=0.9806
+
+step 30100, training accuracy 0.3
+step 30200, training accuracy 0.3
+step 30300, training accuracy 0.3
+step 30400, training accuracy 0.3
+step 30500, training accuracy 0.28
+step 30600, training accuracy 0.3
+step 30700, training accuracy 0.28
+step 30800, training accuracy 0.3
+step 30900, training accuracy 0.3
+step 31000, training accuracy 0.3
+
+i=31000,test_acc=0.982
+
+step 31100, training accuracy 0.3
+step 31200, training accuracy 0.3
+step 31300, training accuracy 0.3
+step 31400, training accuracy 0.3
+step 31500, training accuracy 0.3
+step 31600, training accuracy 0.3
+step 31700, training accuracy 0.28
+step 31800, training accuracy 0.28
+step 31900, training accuracy 0.3
+step 32000, training accuracy 0.3
+
+i=32000,test_acc=0.9804
+
+step 32100, training accuracy 0.3
+step 32200, training accuracy 0.32
+step 32300, training accuracy 0.3
+step 32400, training accuracy 0.3
+step 32500, training accuracy 0.3
+step 32600, training accuracy 0.3
+step 32700, training accuracy 0.3
+step 32800, training accuracy 0.3
+step 32900, training accuracy 0.3
+step 33000, training accuracy 0.28
+
+i=33000,test_acc=0.9805
+
+step 33100, training accuracy 0.3
+step 33200, training accuracy 0.28
+step 33300, training accuracy 0.3
+step 33400, training accuracy 0.28
+step 33500, training accuracy 0.3
+step 33600, training accuracy 0.3
+step 33700, training accuracy 0.3
+step 33800, training accuracy 0.3
+step 33900, training accuracy 0.3
+step 34000, training accuracy 0.3
+
+i=34000,test_acc=0.9809
+
+step 34100, training accuracy 0.3
+step 34200, training accuracy 0.28
+step 34300, training accuracy 0.28
+step 34400, training accuracy 0.3
+step 34500, training accuracy 0.3
+step 34600, training accuracy 0.3
+step 34700, training accuracy 0.3
+step 34800, training accuracy 0.3
+step 34900, training accuracy 0.28
+step 35000, training accuracy 0.32
+
+i=35000,test_acc=0.9797
+
+step 35100, training accuracy 0.3
+step 35200, training accuracy 0.3
+step 35300, training accuracy 0.3
+step 35400, training accuracy 0.3
+step 35500, training accuracy 0.3
+step 35600, training accuracy 0.32
+step 35700, training accuracy 0.3
+step 35800, training accuracy 0.3
+step 35900, training accuracy 0.3
+step 36000, training accuracy 0.3
+
+i=36000,test_acc=0.9816
+
+step 36100, training accuracy 0.28
+step 36200, training accuracy 0.3
+step 36300, training accuracy 0.3
+step 36400, training accuracy 0.3
+step 36500, training accuracy 0.3
+step 36600, training accuracy 0.3
+step 36700, training accuracy 0.3
+step 36800, training accuracy 0.3
+step 36900, training accuracy 0.3
+step 37000, training accuracy 0.3
+
+i=37000,test_acc=0.982
+
+step 37100, training accuracy 0.26
+step 37200, training accuracy 0.3
+step 37300, training accuracy 0.3
+step 37400, training accuracy 0.3
+step 37500, training accuracy 0.3
+step 37600, training accuracy 0.3
+step 37700, training accuracy 0.3
+step 37800, training accuracy 0.3
+step 37900, training accuracy 0.28
+step 38000, training accuracy 0.3
+
+i=38000,test_acc=0.9818
+
+step 38100, training accuracy 0.3
+step 38200, training accuracy 0.3
+step 38300, training accuracy 0.28
+step 38400, training accuracy 0.3
+step 38500, training accuracy 0.28
+step 38600, training accuracy 0.3
+step 38700, training accuracy 0.3
+step 38800, training accuracy 0.3
+step 38900, training accuracy 0.3
+step 39000, training accuracy 0.28
+
+i=39000,test_acc=0.981
+
+step 39100, training accuracy 0.3
+step 39200, training accuracy 0.3
+step 39300, training accuracy 0.28
+step 39400, training accuracy 0.3
+step 39500, training accuracy 0.3
+step 39600, training accuracy 0.28
+step 39700, training accuracy 0.3
+step 39800, training accuracy 0.3
+step 39900, training accuracy 0.3
+step 40000, training accuracy 0.28
+
+i=40000,test_acc=0.9838
+
+step 40100, training accuracy 0.3
+step 40200, training accuracy 0.3
+step 40300, training accuracy 0.3
+step 40400, training accuracy 0.3
+step 40500, training accuracy 0.28
+step 40600, training accuracy 0.28
+step 40700, training accuracy 0.3
+step 40800, training accuracy 0.28
+step 40900, training accuracy 0.3
+step 41000, training accuracy 0.3
+
+i=41000,test_acc=0.9828
+
+step 41100, training accuracy 0.3
+step 41200, training accuracy 0.28
+step 41300, training accuracy 0.3
+step 41400, training accuracy 0.3
+step 41500, training accuracy 0.3
+step 41600, training accuracy 0.3
+step 41700, training accuracy 0.3
+step 41800, training accuracy 0.3
+step 41900, training accuracy 0.3
+step 42000, training accuracy 0.3
+
+i=42000,test_acc=0.9829
+
+step 42100, training accuracy 0.3
+step 42200, training accuracy 0.3
+step 42300, training accuracy 0.28
+step 42400, training accuracy 0.3
+step 42500, training accuracy 0.3
+step 42600, training accuracy 0.3
+step 42700, training accuracy 0.3
+step 42800, training accuracy 0.3
+step 42900, training accuracy 0.3
+step 43000, training accuracy 0.28
+
+i=43000,test_acc=0.9839
+
+step 43100, training accuracy 0.3
+step 43200, training accuracy 0.3
+step 43300, training accuracy 0.3
+step 43400, training accuracy 0.3
+step 43500, training accuracy 0.3
+step 43600, training accuracy 0.3
+step 43700, training accuracy 0.3
+step 43800, training accuracy 0.28
+step 43900, training accuracy 0.28
+step 44000, training accuracy 0.3
+
+i=44000,test_acc=0.9836
+
+step 44100, training accuracy 0.3
+step 44200, training accuracy 0.3
+step 44300, training accuracy 0.3
+step 44400, training accuracy 0.28
+step 44500, training accuracy 0.26
+step 44600, training accuracy 0.3
+step 44700, training accuracy 0.3
+step 44800, training accuracy 0.3
+step 44900, training accuracy 0.3
+step 45000, training accuracy 0.3
+
+i=45000,test_acc=0.9824
+
+step 45100, training accuracy 0.32
+step 45200, training accuracy 0.3
+step 45300, training accuracy 0.28
+step 45400, training accuracy 0.3
+step 45500, training accuracy 0.3
+step 45600, training accuracy 0.28
+step 45700, training accuracy 0.3
+step 45800, training accuracy 0.3
+step 45900, training accuracy 0.28
+step 46000, training accuracy 0.3
+
+i=46000,test_acc=0.9854
+
+step 46100, training accuracy 0.3
+step 46200, training accuracy 0.3
+step 46300, training accuracy 0.3
+step 46400, training accuracy 0.3
+step 46500, training accuracy 0.3
+step 46600, training accuracy 0.3
+step 46700, training accuracy 0.3
+step 46800, training accuracy 0.3
+step 46900, training accuracy 0.3
+step 47000, training accuracy 0.3
+
+i=47000,test_acc=0.9841
+
+step 47100, training accuracy 0.3
+step 47200, training accuracy 0.28
+step 47300, training accuracy 0.3
+step 47400, training accuracy 0.3
+step 47500, training accuracy 0.3
+step 47600, training accuracy 0.3
+step 47700, training accuracy 0.3
+step 47800, training accuracy 0.3
+step 47900, training accuracy 0.3
+step 48000, training accuracy 0.3
+
+i=48000,test_acc=0.9851
+
+step 48100, training accuracy 0.28
+step 48200, training accuracy 0.3
+step 48300, training accuracy 0.3
+step 48400, training accuracy 0.3
+step 48500, training accuracy 0.3
+step 48600, training accuracy 0.3
+step 48700, training accuracy 0.3
+step 48800, training accuracy 0.32
+step 48900, training accuracy 0.3
+step 49000, training accuracy 0.28
+
+i=49000,test_acc=0.9837
+
+step 49100, training accuracy 0.3
+step 49200, training accuracy 0.28
+step 49300, training accuracy 0.3
+step 49400, training accuracy 0.28
+step 49500, training accuracy 0.3
+step 49600, training accuracy 0.3
+step 49700, training accuracy 0.3
+step 49800, training accuracy 0.28
+step 49900, training accuracy 0.3
+
+i=49999,test_acc=0.9849
+
+#configure: vector=False,batch_size=50,drop_prob=1.0000,mistake_rate=0.9000
 step 0, training accuracy 0.08
 
-i=0,test_acc=0.0735
+i=0,test_acc=0.1009
 
-step 100, training accuracy 0.48
-step 200, training accuracy 0.72
-step 300, training accuracy 0.62
-step 400, training accuracy 0.6
-step 500, training accuracy 0.34
-step 600, training accuracy 0.3
-step 700, training accuracy 0.34
-step 800, training accuracy 0.28
-step 900, training accuracy 0.26
-step 1000, training accuracy 0.44
+step 100, training accuracy 0.14
+step 200, training accuracy 0.18
+step 300, training accuracy 0.14
+step 400, training accuracy 0.12
+step 500, training accuracy 0.06
+step 600, training accuracy 0.1
+step 700, training accuracy 0.06
+step 800, training accuracy 0.08
+step 900, training accuracy 0.1
+step 1000, training accuracy 0.1
 
-i=1000,test_acc=0.3518
+i=1000,test_acc=0.1033
 
-step 1100, training accuracy 0.22
-step 1200, training accuracy 0.22
-step 1300, training accuracy 0.34
-step 1400, training accuracy 0.32
-step 1500, training accuracy 0.24
-step 1600, training accuracy 0.22
-step 1700, training accuracy 0.2
-step 1800, training accuracy 0.46
-step 1900, training accuracy 0.14
-step 2000, training accuracy 0.16
+step 1100, training accuracy 0.12
+step 1200, training accuracy 0.1
+step 1300, training accuracy 0.06
+step 1400, training accuracy 0.02
+step 1500, training accuracy 0.08
+step 1600, training accuracy 0.12
+step 1700, training accuracy 0.1
+step 1800, training accuracy 0.02
+step 1900, training accuracy 0.02
+step 2000, training accuracy 0.12
 
-i=2000,test_acc=0.2624
+i=2000,test_acc=0.0888
 
-step 2100, training accuracy 0.3
-step 2200, training accuracy 0.3
-step 2300, training accuracy 0.16
-step 2400, training accuracy 0.16
-step 2500, training accuracy 0.12
-step 2600, training accuracy 0.06
-step 2700, training accuracy 0.12
-step 2800, training accuracy 0.14
-step 2900, training accuracy 0.18
-step 3000, training accuracy 0.08
+step 2100, training accuracy 0.06
+step 2200, training accuracy 0.02
+step 2300, training accuracy 0.14
+step 2400, training accuracy 0.1
+step 2500, training accuracy 0.06
+step 2600, training accuracy 0.1
+step 2700, training accuracy 0.06
+step 2800, training accuracy 0.04
+step 2900, training accuracy 0.1
+step 3000, training accuracy 0.14
 
-i=3000,test_acc=0.1665
+i=3000,test_acc=0.1017
 
 step 3100, training accuracy 0.14
-step 3200, training accuracy 0.18
-step 3300, training accuracy 0.08
-step 3400, training accuracy 0.06
-step 3500, training accuracy 0.32
-step 3600, training accuracy 0.18
-step 3700, training accuracy 0.06
-step 3800, training accuracy 0.22
-step 3900, training accuracy 0.22
-step 4000, training accuracy 0.12
+step 3200, training accuracy 0.1
+step 3300, training accuracy 0.02
+step 3400, training accuracy 0.04
+step 3500, training accuracy 0.14
+step 3600, training accuracy 0.14
+step 3700, training accuracy 0.02
+step 3800, training accuracy 0.02
+step 3900, training accuracy 0.06
+step 4000, training accuracy 0.06
 
-i=4000,test_acc=0.1052
+i=4000,test_acc=0.0867
 
-step 4100, training accuracy 0.1
-step 4200, training accuracy 0.08
-step 4300, training accuracy 0.08
+step 4100, training accuracy 0.08
+step 4200, training accuracy 0.16
+step 4300, training accuracy 0.12
 step 4400, training accuracy 0.08
-step 4500, training accuracy 0.02
-step 4600, training accuracy 0.1
-step 4700, training accuracy 0.24
-step 4800, training accuracy 0.12
-step 4900, training accuracy 0.12
-step 5000, training accuracy 0.06
+step 4500, training accuracy 0.12
+step 4600, training accuracy 0.12
+step 4700, training accuracy 0.14
+step 4800, training accuracy 0.06
+step 4900, training accuracy 0.06
+step 5000, training accuracy 0.14
 
-i=5000,test_acc=0.1111
+i=5000,test_acc=0.1013
 
-step 5100, training accuracy 0.1
-step 5200, training accuracy 0.12
-step 5300, training accuracy 0.06
-step 5400, training accuracy 0.1
-step 5500, training accuracy 0.1
-step 5600, training accuracy 0.14
-step 5700, training accuracy 0.16
-step 5800, training accuracy 0.04
-step 5900, training accuracy 0.14
-step 6000, training accuracy 0.14
+step 5100, training accuracy 0.12
+step 5200, training accuracy 0.1
+step 5300, training accuracy 0.1
+step 5400, training accuracy 0.06
+step 5500, training accuracy 0.12
+step 5600, training accuracy 0.12
+step 5700, training accuracy 0.18
+step 5800, training accuracy 0.1
+step 5900, training accuracy 0.12
+step 6000, training accuracy 0.08
 
-i=6000,test_acc=0.1007
+i=6000,test_acc=0.0765
 
-step 6100, training accuracy 0.14
-step 6200, training accuracy 0.14
-step 6300, training accuracy 0.08
-step 6400, training accuracy 0.08
-step 6500, training accuracy 0.04
-step 6600, training accuracy 0.1
-step 6700, training accuracy 0.06
-step 6800, training accuracy 0
+step 6100, training accuracy 0.12
+step 6200, training accuracy 0.1
+step 6300, training accuracy 0.14
+step 6400, training accuracy 0.06
+step 6500, training accuracy 0.1
+step 6600, training accuracy 0.06
+step 6700, training accuracy 0.08
+step 6800, training accuracy 0.08
 step 6900, training accuracy 0.1
-step 7000, training accuracy 0.12
+step 7000, training accuracy 0.04
 
-i=7000,test_acc=0.1659
+i=7000,test_acc=0.0618
 
-step 7100, training accuracy 0.1
+step 7100, training accuracy 0.14
 step 7200, training accuracy 0.1
-step 7300, training accuracy 0.04
-step 7400, training accuracy 0.1
-step 7500, training accuracy 0.1
-step 7600, training accuracy 0.1
-step 7700, training accuracy 0.14
-step 7800, training accuracy 0
-step 7900, training accuracy 0.14
-step 8000, training accuracy 0.1
+step 7300, training accuracy 0.06
+step 7400, training accuracy 0.08
+step 7500, training accuracy 0.14
+step 7600, training accuracy 0.08
+step 7700, training accuracy 0.12
+step 7800, training accuracy 0.08
+step 7900, training accuracy 0.06
+step 8000, training accuracy 0.12
 
-i=8000,test_acc=0.1135
+i=8000,test_acc=0.1168
 
-step 8100, training accuracy 0.2
-step 8200, training accuracy 0.08
-step 8300, training accuracy 0.18
-step 8400, training accuracy 0.14
+step 8100, training accuracy 0.12
+step 8200, training accuracy 0.2
+step 8300, training accuracy 0.08
+step 8400, training accuracy 0.04
 step 8500, training accuracy 0.08
-step 8600, training accuracy 0.06
-step 8700, training accuracy 0.12
-step 8800, training accuracy 0.22
-step 8900, training accuracy 0.1
-step 9000, training accuracy 0.06
+step 8600, training accuracy 0.08
+step 8700, training accuracy 0.1
+step 8800, training accuracy 0.06
+step 8900, training accuracy 0.14
+step 9000, training accuracy 0.08
 
-i=9000,test_acc=0.0974
+i=9000,test_acc=0.1028
 
-step 9100, training accuracy 0.06
-step 9200, training accuracy 0.08
-step 9300, training accuracy 0.04
+step 9100, training accuracy 0.12
+step 9200, training accuracy 0.16
+step 9300, training accuracy 0.12
 step 9400, training accuracy 0.06
-step 9500, training accuracy 0.08
-step 9600, training accuracy 0.14
+step 9500, training accuracy 0.12
+step 9600, training accuracy 0.1
 step 9700, training accuracy 0.06
-step 9800, training accuracy 0.06
-step 9900, training accuracy 0.04
-step 10000, training accuracy 0.16
+step 9800, training accuracy 0.18
+step 9900, training accuracy 0.06
+step 10000, training accuracy 0.04
 
-i=10000,test_acc=0.1576
+i=10000,test_acc=0.1063
 
-step 10100, training accuracy 0.1
+step 10100, training accuracy 0.18
 step 10200, training accuracy 0.06
-step 10300, training accuracy 0.1
-step 10400, training accuracy 0.08
-step 10500, training accuracy 0.04
-step 10600, training accuracy 0.08
-step 10700, training accuracy 0.04
-step 10800, training accuracy 0.04
-step 10900, training accuracy 0.1
+step 10300, training accuracy 0.12
+step 10400, training accuracy 0.02
+step 10500, training accuracy 0.1
+step 10600, training accuracy 0.02
+step 10700, training accuracy 0.18
+step 10800, training accuracy 0.1
+step 10900, training accuracy 0.08
 step 11000, training accuracy 0.04
 
-i=11000,test_acc=0.1009
+i=11000,test_acc=0.103
 
-step 11100, training accuracy 0.02
-step 11200, training accuracy 0.14
-step 11300, training accuracy 0.06
-step 11400, training accuracy 0.1
-step 11500, training accuracy 0.16
+step 11100, training accuracy 0.18
+step 11200, training accuracy 0.12
+step 11300, training accuracy 0.08
+step 11400, training accuracy 0.16
+step 11500, training accuracy 0.04
 step 11600, training accuracy 0.08
 step 11700, training accuracy 0.16
 step 11800, training accuracy 0.06
 step 11900, training accuracy 0.12
-step 12000, training accuracy 0.12
+step 12000, training accuracy 0.02
 
-i=12000,test_acc=0.1032
+i=12000,test_acc=0.098
 
-step 12100, training accuracy 0.08
-step 12200, training accuracy 0.12
-step 12300, training accuracy 0.1
-step 12400, training accuracy 0
-step 12500, training accuracy 0.12
+step 12100, training accuracy 0.12
+step 12200, training accuracy 0.14
+step 12300, training accuracy 0.04
+step 12400, training accuracy 0.14
+step 12500, training accuracy 0.06
 step 12600, training accuracy 0.14
-step 12700, training accuracy 0.1
-step 12800, training accuracy 0.14
-step 12900, training accuracy 0.08
-step 13000, training accuracy 0.22
+step 12700, training accuracy 0.06
+step 12800, training accuracy 0.1
+step 12900, training accuracy 0.14
+step 13000, training accuracy 0.08
 
-i=13000,test_acc=0.098
+i=13000,test_acc=0.092
 
-step 13100, training accuracy 0.04
-step 13200, training accuracy 0.12
+step 13100, training accuracy 0.06
+step 13200, training accuracy 0.08
 step 13300, training accuracy 0.12
-step 13400, training accuracy 0.08
-step 13500, training accuracy 0.16
-step 13600, training accuracy 0.06
-step 13700, training accuracy 0.12
+step 13400, training accuracy 0.1
+step 13500, training accuracy 0.04
+step 13600, training accuracy 0.2
+step 13700, training accuracy 0.08
 step 13800, training accuracy 0.12
-step 13900, training accuracy 0.08
-step 14000, training accuracy 0.1
+step 13900, training accuracy 0.12
+step 14000, training accuracy 0.08
 
-i=14000,test_acc=0.1032
+i=14000,test_acc=0.104
 
-step 14100, training accuracy 0.08
+step 14100, training accuracy 0.02
 step 14200, training accuracy 0.08
-step 14300, training accuracy 0.12
+step 14300, training accuracy 0.18
 step 14400, training accuracy 0.14
-step 14500, training accuracy 0.08
+step 14500, training accuracy 0.12
 step 14600, training accuracy 0.14
-step 14700, training accuracy 0.12
-step 14800, training accuracy 0.08
-step 14900, training accuracy 0.06
-step 15000, training accuracy 0.14
+step 14700, training accuracy 0.08
+step 14800, training accuracy 0.1
+step 14900, training accuracy 0.08
+step 15000, training accuracy 0.08
 
-i=15000,test_acc=0.101
+i=15000,test_acc=0.1179
 
 step 15100, training accuracy 0.04
-step 15200, training accuracy 0.14
-step 15300, training accuracy 0.06
-step 15400, training accuracy 0.1
+step 15200, training accuracy 0.1
+step 15300, training accuracy 0.12
+step 15400, training accuracy 0.16
 step 15500, training accuracy 0.14
-step 15600, training accuracy 0.04
-step 15700, training accuracy 0.06
-step 15800, training accuracy 0.1
-step 15900, training accuracy 0.1
-step 16000, training accuracy 0.1
+step 15600, training accuracy 0.08
+step 15700, training accuracy 0.1
+step 15800, training accuracy 0.12
+step 15900, training accuracy 0.12
+step 16000, training accuracy 0.08
 
-i=16000,test_acc=0.1033
+i=16000,test_acc=0.1148
 
-step 16100, training accuracy 0.12
-step 16200, training accuracy 0.06
-step 16300, training accuracy 0.08
-step 16400, training accuracy 0.1
-step 16500, training accuracy 0.2
-step 16600, training accuracy 0.08
+step 16100, training accuracy 0.06
+step 16200, training accuracy 0.16
+step 16300, training accuracy 0.06
+step 16400, training accuracy 0.06
+step 16500, training accuracy 0.14
+step 16600, training accuracy 0.14
 step 16700, training accuracy 0.06
-step 16800, training accuracy 0.08
-step 16900, training accuracy 0.16
-step 17000, training accuracy 0.04
+step 16800, training accuracy 0.04
+step 16900, training accuracy 0.06
+step 17000, training accuracy 0.06
 
-i=17000,test_acc=0.1028
+i=17000,test_acc=0.0931
 
-step 17100, training accuracy 0.18
-step 17200, training accuracy 0.14
-step 17300, training accuracy 0.08
-step 17400, training accuracy 0.16
-step 17500, training accuracy 0.08
+step 17100, training accuracy 0.08
+step 17200, training accuracy 0.12
+step 17300, training accuracy 0.14
+step 17400, training accuracy 0.04
+step 17500, training accuracy 0.06
 step 17600, training accuracy 0.06
-step 17700, training accuracy 0.06
-step 17800, training accuracy 0.12
-step 17900, training accuracy 0.08
-step 18000, training accuracy 0.06
+step 17700, training accuracy 0.14
+step 17800, training accuracy 0.14
+step 17900, training accuracy 0.14
+step 18000, training accuracy 0.1
 
-i=18000,test_acc=0.1009
+i=18000,test_acc=0.0746
 
-step 18100, training accuracy 0.08
-step 18200, training accuracy 0.12
-step 18300, training accuracy 0.06
-step 18400, training accuracy 0.06
-step 18500, training accuracy 0.08
-step 18600, training accuracy 0.06
-step 18700, training accuracy 0.12
-step 18800, training accuracy 0.06
-step 18900, training accuracy 0.04
-step 19000, training accuracy 0.14
+step 18100, training accuracy 0.04
+step 18200, training accuracy 0.08
+step 18300, training accuracy 0.08
+step 18400, training accuracy 0.1
+step 18500, training accuracy 0.1
+step 18600, training accuracy 0.1
+step 18700, training accuracy 0.04
+step 18800, training accuracy 0.04
+step 18900, training accuracy 0.14
+step 19000, training accuracy 0.08
 
-i=19000,test_acc=0.1032
+i=19000,test_acc=0.1149
 
-step 19100, training accuracy 0.08
+step 19100, training accuracy 0.12
+step 19200, training accuracy 0.16
+step 19300, training accuracy 0.06
+step 19400, training accuracy 0.14
+step 19500, training accuracy 0.08
+step 19600, training accuracy 0.04
+step 19700, training accuracy 0.1
+step 19800, training accuracy 0.08
+step 19900, training accuracy 0.06
+step 20000, training accuracy 0.14
+
+i=20000,test_acc=0.0995
+
+step 20100, training accuracy 0.12
+step 20200, training accuracy 0.12
+step 20300, training accuracy 0.18
+step 20400, training accuracy 0.12
+step 20500, training accuracy 0.1
+step 20600, training accuracy 0.04
+step 20700, training accuracy 0.1
+step 20800, training accuracy 0.08
+step 20900, training accuracy 0.06
+step 21000, training accuracy 0.16
+
+i=21000,test_acc=0.0954
+
+#configure: vector=False,batch_size=50,drop_prob=1.0000,mistake_rate=0.8000
+step 0, training accuracy 0.08
+
+i=0,test_acc=0.1128
+
+step 100, training accuracy 0.12
+step 200, training accuracy 0.12
+step 300, training accuracy 0.06
+step 400, training accuracy 0.14
+step 500, training accuracy 0.14
+step 600, training accuracy 0.2
+step 700, training accuracy 0.16
+step 800, training accuracy 0.18
+step 900, training accuracy 0.08
+step 1000, training accuracy 0.18
+
+i=1000,test_acc=0.5204
+
+step 1100, training accuracy 0.12
+step 1200, training accuracy 0.12
+step 1300, training accuracy 0.14
+step 1400, training accuracy 0.14
+step 1500, training accuracy 0.18
+step 1600, training accuracy 0.18
+step 1700, training accuracy 0.26
+step 1800, training accuracy 0.14
+step 1900, training accuracy 0.12
+step 2000, training accuracy 0.16
+
+i=2000,test_acc=0.6518
+
+step 2100, training accuracy 0.18
+step 2200, training accuracy 0.18
+step 2300, training accuracy 0.22
+step 2400, training accuracy 0.16
+step 2500, training accuracy 0.16
+step 2600, training accuracy 0.14
+step 2700, training accuracy 0.18
+step 2800, training accuracy 0.18
+step 2900, training accuracy 0.22
+step 3000, training accuracy 0.16
+
+i=3000,test_acc=0.6348
+
+step 3100, training accuracy 0.16
+step 3200, training accuracy 0.18
+step 3300, training accuracy 0.14
+step 3400, training accuracy 0.2
+step 3500, training accuracy 0.2
+step 3600, training accuracy 0.1
+step 3700, training accuracy 0.2
+step 3800, training accuracy 0.12
+step 3900, training accuracy 0.14
+step 4000, training accuracy 0.16
+
+i=4000,test_acc=0.8103
+
+step 4100, training accuracy 0.2
+step 4200, training accuracy 0.2
+step 4300, training accuracy 0.22
+step 4400, training accuracy 0.2
+step 4500, training accuracy 0.18
+step 4600, training accuracy 0.24
+step 4700, training accuracy 0.16
+step 4800, training accuracy 0.16
+step 4900, training accuracy 0.2
+step 5000, training accuracy 0.18
+
+i=5000,test_acc=0.8266
+
+step 5100, training accuracy 0.18
+step 5200, training accuracy 0.18
+step 5300, training accuracy 0.16
+step 5400, training accuracy 0.24
+step 5500, training accuracy 0.18
+step 5600, training accuracy 0.14
+step 5700, training accuracy 0.2
+step 5800, training accuracy 0.18
+step 5900, training accuracy 0.16
+step 6000, training accuracy 0.14
+
+i=6000,test_acc=0.8643
+
+step 6100, training accuracy 0.2
+step 6200, training accuracy 0.22
+step 6300, training accuracy 0.18
+step 6400, training accuracy 0.24
+step 6500, training accuracy 0.16
+step 6600, training accuracy 0.2
+step 6700, training accuracy 0.18
+step 6800, training accuracy 0.2
+step 6900, training accuracy 0.24
+step 7000, training accuracy 0.18
+
+i=7000,test_acc=0.8752
+
+step 7100, training accuracy 0.18
+step 7200, training accuracy 0.18
+step 7300, training accuracy 0.22
+step 7400, training accuracy 0.18
+step 7500, training accuracy 0.16
+step 7600, training accuracy 0.18
+step 7700, training accuracy 0.22
+step 7800, training accuracy 0.18
+step 7900, training accuracy 0.16
+step 8000, training accuracy 0.22
+
+i=8000,test_acc=0.8879
+
+step 8100, training accuracy 0.22
+step 8200, training accuracy 0.18
+step 8300, training accuracy 0.18
+step 8400, training accuracy 0.18
+step 8500, training accuracy 0.2
+step 8600, training accuracy 0.14
+step 8700, training accuracy 0.22
+step 8800, training accuracy 0.18
+step 8900, training accuracy 0.16
+step 9000, training accuracy 0.18
+
+i=9000,test_acc=0.9106
+
+step 9100, training accuracy 0.2
+step 9200, training accuracy 0.18
+step 9300, training accuracy 0.18
+step 9400, training accuracy 0.16
+step 9500, training accuracy 0.2
+step 9600, training accuracy 0.18
+step 9700, training accuracy 0.16
+step 9800, training accuracy 0.22
+step 9900, training accuracy 0.18
+step 10000, training accuracy 0.2
+
+i=10000,test_acc=0.9029
+
+step 10100, training accuracy 0.18
+step 10200, training accuracy 0.24
+step 10300, training accuracy 0.18
+step 10400, training accuracy 0.2
+step 10500, training accuracy 0.2
+step 10600, training accuracy 0.16
+step 10700, training accuracy 0.18
+step 10800, training accuracy 0.2
+step 10900, training accuracy 0.18
+step 11000, training accuracy 0.22
+
+i=11000,test_acc=0.9156
+
+step 11100, training accuracy 0.18
+step 11200, training accuracy 0.18
+step 11300, training accuracy 0.2
+step 11400, training accuracy 0.14
+step 11500, training accuracy 0.18
+step 11600, training accuracy 0.18
+step 11700, training accuracy 0.18
+step 11800, training accuracy 0.18
+step 11900, training accuracy 0.2
+step 12000, training accuracy 0.16
+
+i=12000,test_acc=0.9122
+
+step 12100, training accuracy 0.18
+step 12200, training accuracy 0.2
+step 12300, training accuracy 0.16
+step 12400, training accuracy 0.16
+step 12500, training accuracy 0.16
+step 12600, training accuracy 0.24
+step 12700, training accuracy 0.18
+step 12800, training accuracy 0.22
+step 12900, training accuracy 0.18
+step 13000, training accuracy 0.18
+
+i=13000,test_acc=0.9318
+
+step 13100, training accuracy 0.2
+step 13200, training accuracy 0.2
+step 13300, training accuracy 0.18
+step 13400, training accuracy 0.2
+step 13500, training accuracy 0.2
+step 13600, training accuracy 0.18
+step 13700, training accuracy 0.18
+step 13800, training accuracy 0.16
+step 13900, training accuracy 0.18
+step 14000, training accuracy 0.18
+
+i=14000,test_acc=0.9179
+
+step 14100, training accuracy 0.2
+step 14200, training accuracy 0.18
+step 14300, training accuracy 0.22
+step 14400, training accuracy 0.16
+step 14500, training accuracy 0.18
+step 14600, training accuracy 0.18
+step 14700, training accuracy 0.16
+step 14800, training accuracy 0.22
+step 14900, training accuracy 0.18
+step 15000, training accuracy 0.18
+
+i=15000,test_acc=0.9158
+
+step 15100, training accuracy 0.18
+step 15200, training accuracy 0.22
+step 15300, training accuracy 0.16
+step 15400, training accuracy 0.22
+step 15500, training accuracy 0.2
+step 15600, training accuracy 0.2
+step 15700, training accuracy 0.18
+step 15800, training accuracy 0.2
+step 15900, training accuracy 0.2
+step 16000, training accuracy 0.18
+
+i=16000,test_acc=0.9338
+
+step 16100, training accuracy 0.2
+step 16200, training accuracy 0.18
+step 16300, training accuracy 0.18
+step 16400, training accuracy 0.18
+step 16500, training accuracy 0.14
+step 16600, training accuracy 0.24
+step 16700, training accuracy 0.2
+step 16800, training accuracy 0.18
+step 16900, training accuracy 0.24
+step 17000, training accuracy 0.16
+
+i=17000,test_acc=0.9367
+
+step 17100, training accuracy 0.12
+step 17200, training accuracy 0.2
+step 17300, training accuracy 0.2
+step 17400, training accuracy 0.16
+step 17500, training accuracy 0.2
+step 17600, training accuracy 0.2
+step 17700, training accuracy 0.18
+step 17800, training accuracy 0.2
+step 17900, training accuracy 0.2
+step 18000, training accuracy 0.2
+
+i=18000,test_acc=0.9408
+
+step 18100, training accuracy 0.2
+step 18200, training accuracy 0.18
+step 18300, training accuracy 0.18
+step 18400, training accuracy 0.16
+step 18500, training accuracy 0.2
+step 18600, training accuracy 0.18
+step 18700, training accuracy 0.18
+step 18800, training accuracy 0.18
+step 18900, training accuracy 0.2
+step 19000, training accuracy 0.2
+
+i=19000,test_acc=0.9455
+
+step 19100, training accuracy 0.2
 step 19200, training accuracy 0.2
-step 19300, training accuracy 0.12
-step 19400, training accuracy 0.1
-step 19500, training accuracy 0.14
-step 19600, training accuracy 0.08
-step 19700, training accuracy 0.12
-step 19800, training accuracy 0.14
-step 19900, training accuracy 0.14
+step 19300, training accuracy 0.2
+step 19400, training accuracy 0.18
+step 19500, training accuracy 0.2
+step 19600, training accuracy 0.18
+step 19700, training accuracy 0.2
+step 19800, training accuracy 0.16
+step 19900, training accuracy 0.18
+step 20000, training accuracy 0.18
 
-i=19999,test_acc=0.1032
+i=20000,test_acc=0.9441
+
+step 20100, training accuracy 0.2
+step 20200, training accuracy 0.18
+step 20300, training accuracy 0.2
+step 20400, training accuracy 0.18
+step 20500, training accuracy 0.18
+step 20600, training accuracy 0.2
+step 20700, training accuracy 0.16
+step 20800, training accuracy 0.2
+step 20900, training accuracy 0.18
+step 21000, training accuracy 0.18
+
+i=21000,test_acc=0.9493
+
+step 21100, training accuracy 0.2
+step 21200, training accuracy 0.18
+step 21300, training accuracy 0.2
+step 21400, training accuracy 0.22
+step 21500, training accuracy 0.18
+step 21600, training accuracy 0.2
+step 21700, training accuracy 0.18
+step 21800, training accuracy 0.2
+step 21900, training accuracy 0.2
+step 22000, training accuracy 0.2
+
+i=22000,test_acc=0.9448
+
+step 22100, training accuracy 0.16
+step 22200, training accuracy 0.22
+step 22300, training accuracy 0.18
+step 22400, training accuracy 0.2
+step 22500, training accuracy 0.2
+step 22600, training accuracy 0.2
+step 22700, training accuracy 0.18
+step 22800, training accuracy 0.22
+step 22900, training accuracy 0.2
+step 23000, training accuracy 0.18
+
+i=23000,test_acc=0.9531
+
+step 23100, training accuracy 0.2
+step 23200, training accuracy 0.2
+step 23300, training accuracy 0.22
+step 23400, training accuracy 0.2
+step 23500, training accuracy 0.2
+step 23600, training accuracy 0.2
+step 23700, training accuracy 0.2
+step 23800, training accuracy 0.18
+step 23900, training accuracy 0.2
+step 24000, training accuracy 0.2
+
+i=24000,test_acc=0.9554
+
+step 24100, training accuracy 0.2
+step 24200, training accuracy 0.2
+step 24300, training accuracy 0.22
+step 24400, training accuracy 0.2
+step 24500, training accuracy 0.2
+step 24600, training accuracy 0.2
+step 24700, training accuracy 0.2
+step 24800, training accuracy 0.2
+step 24900, training accuracy 0.2
+step 25000, training accuracy 0.16
+
+i=25000,test_acc=0.9531
+
+step 25100, training accuracy 0.18
+step 25200, training accuracy 0.2
+step 25300, training accuracy 0.2
+step 25400, training accuracy 0.2
+step 25500, training accuracy 0.2
+step 25600, training accuracy 0.2
+step 25700, training accuracy 0.2
+step 25800, training accuracy 0.2
+step 25900, training accuracy 0.2
+step 26000, training accuracy 0.14
+
+i=26000,test_acc=0.9543
+
+step 26100, training accuracy 0.18
+step 26200, training accuracy 0.2
+step 26300, training accuracy 0.2
+step 26400, training accuracy 0.18
+step 26500, training accuracy 0.2
+step 26600, training accuracy 0.18
+step 26700, training accuracy 0.2
+step 26800, training accuracy 0.22
+step 26900, training accuracy 0.22
+step 27000, training accuracy 0.18
+
+i=27000,test_acc=0.9532
+
+step 27100, training accuracy 0.18
+step 27200, training accuracy 0.18
+step 27300, training accuracy 0.2
+step 27400, training accuracy 0.2
+step 27500, training accuracy 0.2
+step 27600, training accuracy 0.2
+step 27700, training accuracy 0.2
+step 27800, training accuracy 0.2
+step 27900, training accuracy 0.2
+step 28000, training accuracy 0.2
+
+i=28000,test_acc=0.9572
+
+step 28100, training accuracy 0.2
+step 28200, training accuracy 0.16
+step 28300, training accuracy 0.2
+step 28400, training accuracy 0.18
+step 28500, training accuracy 0.2
+step 28600, training accuracy 0.22
+step 28700, training accuracy 0.2
+step 28800, training accuracy 0.2
+step 28900, training accuracy 0.2
+step 29000, training accuracy 0.2
+
+i=29000,test_acc=0.956
+
+step 29100, training accuracy 0.2
+step 29200, training accuracy 0.18
+step 29300, training accuracy 0.18
+step 29400, training accuracy 0.2
+step 29500, training accuracy 0.2
+step 29600, training accuracy 0.18
+step 29700, training accuracy 0.2
+step 29800, training accuracy 0.2
+step 29900, training accuracy 0.2
+step 30000, training accuracy 0.2
+
+i=30000,test_acc=0.9587
+
+step 30100, training accuracy 0.22
+step 30200, training accuracy 0.2
+step 30300, training accuracy 0.2
+step 30400, training accuracy 0.2
+step 30500, training accuracy 0.18
+step 30600, training accuracy 0.2
+step 30700, training accuracy 0.2
+step 30800, training accuracy 0.2
+step 30900, training accuracy 0.2
+step 31000, training accuracy 0.22
+
+i=31000,test_acc=0.9584
+
+step 31100, training accuracy 0.2
+step 31200, training accuracy 0.22
+step 31300, training accuracy 0.22
+step 31400, training accuracy 0.2
+step 31500, training accuracy 0.2
+step 31600, training accuracy 0.18
+step 31700, training accuracy 0.18
+step 31800, training accuracy 0.18
+step 31900, training accuracy 0.18
+step 32000, training accuracy 0.2
+
+i=32000,test_acc=0.9601
+
+step 32100, training accuracy 0.22
+step 32200, training accuracy 0.22
+step 32300, training accuracy 0.18
+step 32400, training accuracy 0.2
+step 32500, training accuracy 0.2
+step 32600, training accuracy 0.2
+step 32700, training accuracy 0.18
+step 32800, training accuracy 0.2
+step 32900, training accuracy 0.26
+step 33000, training accuracy 0.2
+
+i=33000,test_acc=0.958
+
+step 33100, training accuracy 0.2
+step 33200, training accuracy 0.2
+step 33300, training accuracy 0.2
+step 33400, training accuracy 0.16
+step 33500, training accuracy 0.2
+step 33600, training accuracy 0.2
+step 33700, training accuracy 0.2
+step 33800, training accuracy 0.18
+step 33900, training accuracy 0.2
+step 34000, training accuracy 0.2
+
+i=34000,test_acc=0.9655
+
+step 34100, training accuracy 0.2
+step 34200, training accuracy 0.2
+step 34300, training accuracy 0.2
+step 34400, training accuracy 0.2
+step 34500, training accuracy 0.2
+step 34600, training accuracy 0.2
+step 34700, training accuracy 0.18
+step 34800, training accuracy 0.18
+step 34900, training accuracy 0.22
+step 35000, training accuracy 0.22
+
+i=35000,test_acc=0.9604
+
+step 35100, training accuracy 0.2
+step 35200, training accuracy 0.2
+step 35300, training accuracy 0.2
+step 35400, training accuracy 0.2
+step 35500, training accuracy 0.2
+step 35600, training accuracy 0.2
+step 35700, training accuracy 0.2
+step 35800, training accuracy 0.18
+step 35900, training accuracy 0.2
+step 36000, training accuracy 0.22
+
+i=36000,test_acc=0.9658
+
+step 36100, training accuracy 0.2
+step 36200, training accuracy 0.2
+step 36300, training accuracy 0.18
+step 36400, training accuracy 0.2
+step 36500, training accuracy 0.2
+step 36600, training accuracy 0.2
+step 36700, training accuracy 0.2
+step 36800, training accuracy 0.18
+step 36900, training accuracy 0.2
+step 37000, training accuracy 0.2
+
+i=37000,test_acc=0.9645
+
+step 37100, training accuracy 0.18
+step 37200, training accuracy 0.16
+step 37300, training accuracy 0.2
+step 37400, training accuracy 0.2
+step 37500, training accuracy 0.2
+step 37600, training accuracy 0.22
+step 37700, training accuracy 0.2
+step 37800, training accuracy 0.2
+step 37900, training accuracy 0.16
+step 38000, training accuracy 0.2
+
+i=38000,test_acc=0.9621
+
+step 38100, training accuracy 0.18
+step 38200, training accuracy 0.18
+step 38300, training accuracy 0.2
+step 38400, training accuracy 0.22
+step 38500, training accuracy 0.2
+step 38600, training accuracy 0.18
+step 38700, training accuracy 0.18
+step 38800, training accuracy 0.2
+step 38900, training accuracy 0.2
+step 39000, training accuracy 0.2
+
+i=39000,test_acc=0.9702
+
+step 39100, training accuracy 0.2
+step 39200, training accuracy 0.2
+step 39300, training accuracy 0.2
+step 39400, training accuracy 0.2
+step 39500, training accuracy 0.18
+step 39600, training accuracy 0.22
+step 39700, training accuracy 0.2
+step 39800, training accuracy 0.2
+step 39900, training accuracy 0.2
+step 40000, training accuracy 0.2
+
+i=40000,test_acc=0.9712
+
+step 40100, training accuracy 0.18
+step 40200, training accuracy 0.18
+step 40300, training accuracy 0.18
+step 40400, training accuracy 0.24
+step 40500, training accuracy 0.2
+step 40600, training accuracy 0.18
+step 40700, training accuracy 0.18
+step 40800, training accuracy 0.2
+step 40900, training accuracy 0.2
+step 41000, training accuracy 0.2
+
+i=41000,test_acc=0.9669
+
+step 41100, training accuracy 0.22
+step 41200, training accuracy 0.2
+step 41300, training accuracy 0.18
+step 41400, training accuracy 0.2
+step 41500, training accuracy 0.16
+step 41600, training accuracy 0.18
+step 41700, training accuracy 0.18
+step 41800, training accuracy 0.2
+step 41900, training accuracy 0.2
+step 42000, training accuracy 0.22
+
+i=42000,test_acc=0.9702
+
+step 42100, training accuracy 0.22
+step 42200, training accuracy 0.2
+step 42300, training accuracy 0.2
+step 42400, training accuracy 0.2
+step 42500, training accuracy 0.2
+step 42600, training accuracy 0.2
+step 42700, training accuracy 0.2
+step 42800, training accuracy 0.2
+step 42900, training accuracy 0.2
+step 43000, training accuracy 0.2
+
+i=43000,test_acc=0.9695
+
+step 43100, training accuracy 0.2
+step 43200, training accuracy 0.2
+step 43300, training accuracy 0.2
+step 43400, training accuracy 0.2
+step 43500, training accuracy 0.18
+step 43600, training accuracy 0.18
+step 43700, training accuracy 0.18
+step 43800, training accuracy 0.18
+step 43900, training accuracy 0.2
+step 44000, training accuracy 0.2
+
+i=44000,test_acc=0.9655
+
+step 44100, training accuracy 0.18
+step 44200, training accuracy 0.18
+step 44300, training accuracy 0.2
+step 44400, training accuracy 0.2
+step 44500, training accuracy 0.2
+step 44600, training accuracy 0.2
+step 44700, training accuracy 0.2
+step 44800, training accuracy 0.2
+step 44900, training accuracy 0.2
+step 45000, training accuracy 0.24
+
+i=45000,test_acc=0.9701
+
+step 45100, training accuracy 0.12
+step 45200, training accuracy 0.2
+step 45300, training accuracy 0.2
+step 45400, training accuracy 0.18
+step 45500, training accuracy 0.2
+step 45600, training accuracy 0.2
+step 45700, training accuracy 0.2
+step 45800, training accuracy 0.2
+step 45900, training accuracy 0.18
+step 46000, training accuracy 0.2
+
+i=46000,test_acc=0.9703
+
+step 46100, training accuracy 0.2
+step 46200, training accuracy 0.2
+step 46300, training accuracy 0.18
+step 46400, training accuracy 0.18
+step 46500, training accuracy 0.2
+step 46600, training accuracy 0.2
+step 46700, training accuracy 0.16
+step 46800, training accuracy 0.2
+step 46900, training accuracy 0.18
+step 47000, training accuracy 0.18
+
+i=47000,test_acc=0.9713
+
+step 47100, training accuracy 0.18
+step 47200, training accuracy 0.18
+step 47300, training accuracy 0.18
+step 47400, training accuracy 0.2
+step 47500, training accuracy 0.22
+step 47600, training accuracy 0.2
+step 47700, training accuracy 0.2
+step 47800, training accuracy 0.2
+step 47900, training accuracy 0.22
+step 48000, training accuracy 0.2
+
+i=48000,test_acc=0.9719
+
+step 48100, training accuracy 0.2
+step 48200, training accuracy 0.2
+step 48300, training accuracy 0.2
+step 48400, training accuracy 0.2
+step 48500, training accuracy 0.22
+step 48600, training accuracy 0.2
+step 48700, training accuracy 0.22
+step 48800, training accuracy 0.22
+step 48900, training accuracy 0.18
+step 49000, training accuracy 0.2
+
+i=49000,test_acc=0.9694
+
+step 49100, training accuracy 0.18
+step 49200, training accuracy 0.2
+step 49300, training accuracy 0.24
+step 49400, training accuracy 0.2
+step 49500, training accuracy 0.2
+step 49600, training accuracy 0.2
+step 49700, training accuracy 0.2
+step 49800, training accuracy 0.2
+step 49900, training accuracy 0.2
+
+i=49999,test_acc=0.9715
 
 #configure: vector=True,out_dim=10,batch_size=50,drop_prob=1.0000,mistake_rate=0.8000,dynamic_lr=0
-i=0,acc=0.1400
-#configure: vector=True,out_dim=10,batch_size=50,drop_prob=1.0000,mistake_rate=0.8000,dynamic_lr=0
-i=0,acc=0.0400
+i=0,acc=0.1000
 
-i=0,test_acc=0.0732
+i=0,test_acc=0.1456
 
-i=100,acc=0.0600
-i=200,acc=0.0600
-i=300,acc=0.0400
-i=400,acc=0.0800
-i=500,acc=0.0800
+i=100,acc=0.1000
+i=200,acc=0.1200
+i=300,acc=0.0800
+i=400,acc=0.0600
+i=500,acc=0.0600
 i=600,acc=0.1600
-i=700,acc=0.1200
-i=800,acc=0.1000
-i=900,acc=0.1800
-i=1000,acc=0.1400
+i=700,acc=0.0600
+i=800,acc=0.0400
+i=900,acc=0.0800
+i=1000,acc=0.1600
 
-i=1000,test_acc=0.2565
+i=1000,test_acc=0.1565
 
-i=1100,acc=0.3200
-i=1200,acc=0.1400
-i=1300,acc=0.1400
-i=1400,acc=0.1200
-i=1500,acc=0.1000
-i=1600,acc=0.2800
-i=1700,acc=0.1800
-i=1800,acc=0.2200
-i=1900,acc=0.1600
+i=1100,acc=0.0600
+i=1200,acc=0.1000
+i=1300,acc=0.0800
+i=1400,acc=0.0400
+i=1500,acc=0.1400
+i=1600,acc=0.2000
+i=1700,acc=0.0600
+i=1800,acc=0.0600
+i=1900,acc=0.0800
 i=2000,acc=0.1000
 
-i=2000,test_acc=0.3488
+i=2000,test_acc=0.1710
 
-i=2100,acc=0.1800
-i=2200,acc=0.2400
-i=2300,acc=0.1400
-i=2400,acc=0.1000
-i=2500,acc=0.1600
-i=2600,acc=0.2200
-i=2700,acc=0.1600
-i=2800,acc=0.2600
-i=2900,acc=0.2200
-i=3000,acc=0.1600
+i=2100,acc=0.1000
+i=2200,acc=0.1400
+i=2300,acc=0.1600
+i=2400,acc=0.0000
+i=2500,acc=0.0600
+i=2600,acc=0.0800
+i=2700,acc=0.2000
+i=2800,acc=0.1200
+i=2900,acc=0.1800
+i=3000,acc=0.0800
 
-i=3000,test_acc=0.4533
+i=3000,test_acc=0.1894
 
-i=3100,acc=0.3000
-i=3200,acc=0.2000
-i=3300,acc=0.1600
-i=3400,acc=0.3000
-i=3500,acc=0.2400
-i=3600,acc=0.2000
-i=3700,acc=0.2200
-i=3800,acc=0.1800
-i=3900,acc=0.2200
-i=4000,acc=0.2800
+i=3100,acc=0.1800
+i=3200,acc=0.1200
+i=3300,acc=0.1400
+i=3400,acc=0.1000
+i=3500,acc=0.2200
+i=3600,acc=0.0600
+i=3700,acc=0.0600
+i=3800,acc=0.1200
+i=3900,acc=0.0800
+i=4000,acc=0.1200
 
-i=4000,test_acc=0.5478
+i=4000,test_acc=0.2116
 
-i=4100,acc=0.3200
-i=4200,acc=0.2000
-i=4300,acc=0.1600
-i=4400,acc=0.3200
-i=4500,acc=0.1800
-i=4600,acc=0.2800
-i=4700,acc=0.3200
-i=4800,acc=0.3600
-i=4900,acc=0.3200
-i=5000,acc=0.1800
+i=4100,acc=0.1200
+i=4200,acc=0.0600
+i=4300,acc=0.0800
+i=4400,acc=0.1200
+i=4500,acc=0.0800
+i=4600,acc=0.1400
+i=4700,acc=0.1000
+i=4800,acc=0.1600
+i=4900,acc=0.2200
+i=5000,acc=0.0800
 
-i=5000,test_acc=0.6484
+i=5000,test_acc=0.2560
 
-i=5100,acc=0.3600
-i=5200,acc=0.2600
-i=5300,acc=0.3800
-i=5400,acc=0.3000
-i=5500,acc=0.3200
-i=5600,acc=0.3200
-i=5700,acc=0.3000
-i=5800,acc=0.2600
-i=5900,acc=0.4000
-i=6000,acc=0.2200
+i=5100,acc=0.0400
+i=5200,acc=0.1400
+i=5300,acc=0.1400
+i=5400,acc=0.1800
+i=5500,acc=0.1200
+i=5600,acc=0.1400
+i=5700,acc=0.1000
+i=5800,acc=0.1000
+i=5900,acc=0.1200
+i=6000,acc=0.1200
 
-i=6000,test_acc=0.5864
+i=6000,test_acc=0.3215
 
-i=6100,acc=0.3800
-i=6200,acc=0.4000
-i=6300,acc=0.3400
-i=6400,acc=0.3400
-i=6500,acc=0.3400
-i=6600,acc=0.3400
-i=6700,acc=0.3800
-i=6800,acc=0.4400
-i=6900,acc=0.3600
-i=7000,acc=0.4800
+i=6100,acc=0.1200
+i=6200,acc=0.0800
+i=6300,acc=0.1200
+i=6400,acc=0.0800
+i=6500,acc=0.1000
+i=6600,acc=0.1800
+i=6700,acc=0.0400
+i=6800,acc=0.1800
+i=6900,acc=0.1000
+i=7000,acc=0.1200
 
-i=7000,test_acc=0.8032
+i=7000,test_acc=0.3514
 
-i=7100,acc=0.4200
-i=7200,acc=0.4400
-i=7300,acc=0.2800
-i=7400,acc=0.3200
-i=7500,acc=0.4200
-i=7600,acc=0.3800
-i=7700,acc=0.3200
-i=7800,acc=0.3600
-i=7900,acc=0.3800
-i=8000,acc=0.3600
+i=7100,acc=0.1400
+i=7200,acc=0.0600
+i=7300,acc=0.1400
+i=7400,acc=0.1400
+i=7500,acc=0.1400
+i=7600,acc=0.2000
+i=7700,acc=0.1000
+i=7800,acc=0.2200
+i=7900,acc=0.1400
+i=8000,acc=0.1000
 
-i=8000,test_acc=0.8396
+i=8000,test_acc=0.4141
 
-i=8100,acc=0.3800
-i=8200,acc=0.3200
-i=8300,acc=0.3600
-i=8400,acc=0.3000
-i=8500,acc=0.4600
-i=8600,acc=0.4000
-i=8700,acc=0.4400
-i=8800,acc=0.4600
-i=8900,acc=0.3800
-i=9000,acc=0.3000
+i=8100,acc=0.1200
+i=8200,acc=0.1200
+i=8300,acc=0.1400
+i=8400,acc=0.0600
+i=8500,acc=0.1800
+i=8600,acc=0.1000
+i=8700,acc=0.1400
+i=8800,acc=0.1200
+i=8900,acc=0.2400
+i=9000,acc=0.1200
 
-i=9000,test_acc=0.9059
+i=9000,test_acc=0.4155
 
-i=9100,acc=0.4800
-i=9200,acc=0.4400
-i=9300,acc=0.4000
-i=9400,acc=0.3000
-i=9500,acc=0.3800
-i=9600,acc=0.4000
-i=9700,acc=0.4200
-i=9800,acc=0.4800
-i=9900,acc=0.4000
-i=10000,acc=0.3600
+i=9100,acc=0.1400
+i=9200,acc=0.1600
+i=9300,acc=0.1600
+i=9400,acc=0.1400
+i=9500,acc=0.1600
+i=9600,acc=0.2400
+i=9700,acc=0.1400
+i=9800,acc=0.0800
+i=9900,acc=0.1600
+i=10000,acc=0.1000
 
-i=10000,test_acc=0.9205
+i=10000,test_acc=0.5005
 
-i=10100,acc=0.3600
-i=10200,acc=0.4600
-i=10300,acc=0.4000
-i=10400,acc=0.4400
-i=10500,acc=0.4400
-i=10600,acc=0.4200
-i=10700,acc=0.3800
-i=10800,acc=0.4200
-i=10900,acc=0.4200
-i=11000,acc=0.4800
+i=10100,acc=0.1400
+i=10200,acc=0.1800
+i=10300,acc=0.1200
+i=10400,acc=0.1600
+i=10500,acc=0.0800
+i=10600,acc=0.1200
+i=10700,acc=0.1800
+i=10800,acc=0.1400
+i=10900,acc=0.2200
+i=11000,acc=0.1400
 
-i=11000,test_acc=0.9325
+i=11000,test_acc=0.5737
 
-i=11100,acc=0.4400
-i=11200,acc=0.4000
-i=11300,acc=0.4200
-i=11400,acc=0.4200
-i=11500,acc=0.4600
-i=11600,acc=0.3600
-i=11700,acc=0.2800
-i=11800,acc=0.4600
-i=11900,acc=0.3800
-i=12000,acc=0.3400
+i=11100,acc=0.1200
+i=11200,acc=0.1800
+i=11300,acc=0.1400
+i=11400,acc=0.1400
+i=11500,acc=0.1600
+i=11600,acc=0.1400
+i=11700,acc=0.2000
+i=11800,acc=0.0600
+i=11900,acc=0.1400
+i=12000,acc=0.1800
 
-i=12000,test_acc=0.9272
+i=12000,test_acc=0.6111
 
-i=12100,acc=0.4000
-i=12200,acc=0.5000
-i=12300,acc=0.4400
-i=12400,acc=0.4400
-i=12500,acc=0.4600
-i=12600,acc=0.4200
-i=12700,acc=0.3200
-i=12800,acc=0.4600
-i=12900,acc=0.4600
-i=13000,acc=0.4000
+i=12100,acc=0.1800
+i=12200,acc=0.1600
+i=12300,acc=0.1800
+i=12400,acc=0.1600
+i=12500,acc=0.1400
+i=12600,acc=0.1800
+i=12700,acc=0.1400
+i=12800,acc=0.1200
+i=12900,acc=0.1800
+i=13000,acc=0.1400
 
-i=13000,test_acc=0.9456
+i=13000,test_acc=0.5593
 
-i=13100,acc=0.3600
-i=13200,acc=0.4000
-i=13300,acc=0.3800
-i=13400,acc=0.4400
-i=13500,acc=0.4000
-i=13600,acc=0.4200
-i=13700,acc=0.5000
-i=13800,acc=0.4600
-i=13900,acc=0.5000
-i=14000,acc=0.3600
+i=13100,acc=0.1600
+i=13200,acc=0.1200
+i=13300,acc=0.1400
+i=13400,acc=0.1800
+i=13500,acc=0.2000
+i=13600,acc=0.0600
+i=13700,acc=0.1200
+i=13800,acc=0.1400
+i=13900,acc=0.1200
+i=14000,acc=0.2000
 
-i=14000,test_acc=0.9519
+i=14000,test_acc=0.5246
 
-i=14100,acc=0.4000
-i=14200,acc=0.5000
-i=14300,acc=0.4600
-i=14400,acc=0.4800
-i=14500,acc=0.4800
-i=14600,acc=0.4000
-i=14700,acc=0.4400
-i=14800,acc=0.3800
-i=14900,acc=0.4000
-i=15000,acc=0.3800
+i=14100,acc=0.2000
+i=14200,acc=0.0400
+i=14300,acc=0.1800
+i=14400,acc=0.1800
+i=14500,acc=0.1000
+i=14600,acc=0.1600
+i=14700,acc=0.1400
+i=14800,acc=0.1200
+i=14900,acc=0.1000
+i=15000,acc=0.1600
 
-i=15000,test_acc=0.9560
+i=15000,test_acc=0.7236
 
-i=15100,acc=0.4400
-i=15200,acc=0.4200
-i=15300,acc=0.3800
-i=15400,acc=0.4400
-i=15500,acc=0.3800
-i=15600,acc=0.4000
-i=15700,acc=0.3800
-i=15800,acc=0.4400
-i=15900,acc=0.4600
-i=16000,acc=0.4600
+i=15100,acc=0.1600
+i=15200,acc=0.1400
+i=15300,acc=0.1800
+i=15400,acc=0.1800
+i=15500,acc=0.1200
+i=15600,acc=0.1600
+i=15700,acc=0.1200
+i=15800,acc=0.1200
+i=15900,acc=0.1400
+i=16000,acc=0.1400
 
-i=16000,test_acc=0.9534
+i=16000,test_acc=0.5266
 
-i=16100,acc=0.4600
-i=16200,acc=0.4000
-i=16300,acc=0.4800
-i=16400,acc=0.4800
-i=16500,acc=0.4600
-i=16600,acc=0.4000
-i=16700,acc=0.3000
-i=16800,acc=0.4000
-i=16900,acc=0.4600
-i=17000,acc=0.4200
+i=16100,acc=0.1600
+i=16200,acc=0.1200
+i=16300,acc=0.1600
+i=16400,acc=0.2000
+i=16500,acc=0.1400
+i=16600,acc=0.2000
+i=16700,acc=0.2200
+i=16800,acc=0.1800
+i=16900,acc=0.0400
+i=17000,acc=0.1800
 
-i=17000,test_acc=0.9568
+i=17000,test_acc=0.6857
 
-i=17100,acc=0.4000
-i=17200,acc=0.4800
-i=17300,acc=0.3800
-i=17400,acc=0.4400
-i=17500,acc=0.4200
-i=17600,acc=0.4200
-i=17700,acc=0.5000
-i=17800,acc=0.5000
-i=17900,acc=0.3800
-i=18000,acc=0.4200
+i=17100,acc=0.2000
+i=17200,acc=0.1400
+i=17300,acc=0.1400
+i=17400,acc=0.2600
+i=17500,acc=0.1200
+i=17600,acc=0.1600
+i=17700,acc=0.1400
+i=17800,acc=0.1400
+i=17900,acc=0.1800
+i=18000,acc=0.2000
 
-i=18000,test_acc=0.9618
+i=18000,test_acc=0.6166
 
-i=18100,acc=0.4000
-i=18200,acc=0.4200
-i=18300,acc=0.3400
-i=18400,acc=0.3400
-i=18500,acc=0.4800
-i=18600,acc=0.4600
-i=18700,acc=0.4600
-i=18800,acc=0.3400
-i=18900,acc=0.4600
-i=19000,acc=0.4000
+i=18100,acc=0.1200
+i=18200,acc=0.2200
+i=18300,acc=0.1600
+i=18400,acc=0.2000
+i=18500,acc=0.1600
+i=18600,acc=0.1200
+i=18700,acc=0.1600
+i=18800,acc=0.1600
+i=18900,acc=0.1000
+i=19000,acc=0.1800
 
-i=19000,test_acc=0.9649
+i=19000,test_acc=0.7343
 
-i=19100,acc=0.4800
-i=19200,acc=0.3800
-i=19300,acc=0.4800
-i=19400,acc=0.4600
-i=19500,acc=0.4000
-i=19600,acc=0.4000
-i=19700,acc=0.5000
-i=19800,acc=0.4200
-i=19900,acc=0.5200
+i=19100,acc=0.1600
+i=19200,acc=0.1000
+i=19300,acc=0.1600
+i=19400,acc=0.1800
+i=19500,acc=0.1200
+i=19600,acc=0.1800
+i=19700,acc=0.1800
+i=19800,acc=0.1400
+i=19900,acc=0.2000
+i=20000,acc=0.1600
 
-test_acc=0.9647
+i=20000,test_acc=0.6668
 
-#configure: vector=True,out_dim=10,batch_size=50,drop_prob=1.0000,mistake_rate=1.0000,dynamic_lr=0
-i=0,acc=0.0600
+i=20100,acc=0.2000
+i=20200,acc=0.2000
+i=20300,acc=0.1000
+i=20400,acc=0.1800
+i=20500,acc=0.1600
+i=20600,acc=0.2000
+i=20700,acc=0.1600
+i=20800,acc=0.2000
+i=20900,acc=0.1600
+i=21000,acc=0.1600
 
-i=0,test_acc=0.0844
+i=21000,test_acc=0.6484
+
+i=21100,acc=0.1600
+i=21200,acc=0.1800
+i=21300,acc=0.1600
+i=21400,acc=0.1600
+i=21500,acc=0.2200
+i=21600,acc=0.1600
+i=21700,acc=0.1600
+i=21800,acc=0.1400
+i=21900,acc=0.1600
+i=22000,acc=0.1400
+
+i=22000,test_acc=0.7519
+
+i=22100,acc=0.2200
+i=22200,acc=0.1400
+i=22300,acc=0.2400
+i=22400,acc=0.2200
+i=22500,acc=0.2400
+i=22600,acc=0.1400
+i=22700,acc=0.1200
+i=22800,acc=0.1800
+i=22900,acc=0.1400
+i=23000,acc=0.1600
+
+i=23000,test_acc=0.7513
+
+i=23100,acc=0.1600
+i=23200,acc=0.2400
+i=23300,acc=0.1600
+i=23400,acc=0.1400
+i=23500,acc=0.1400
+i=23600,acc=0.2000
+i=23700,acc=0.1800
+i=23800,acc=0.1800
+i=23900,acc=0.1400
+i=24000,acc=0.1800
+
+i=24000,test_acc=0.8324
+
+i=24100,acc=0.1800
+i=24200,acc=0.1800
+i=24300,acc=0.1400
+i=24400,acc=0.1800
+i=24500,acc=0.1600
+i=24600,acc=0.1600
+i=24700,acc=0.1600
+i=24800,acc=0.1600
+i=24900,acc=0.1800
+i=25000,acc=0.1600
+
+i=25000,test_acc=0.8120
+
+i=25100,acc=0.1800
+i=25200,acc=0.1800
+i=25300,acc=0.2400
+i=25400,acc=0.1600
+i=25500,acc=0.1200
+i=25600,acc=0.1800
+i=25700,acc=0.2200
+i=25800,acc=0.1800
+i=25900,acc=0.2000
+i=26000,acc=0.1800
+
+i=26000,test_acc=0.8362
+
+i=26100,acc=0.2000
+i=26200,acc=0.1600
+i=26300,acc=0.2000
+i=26400,acc=0.1800
+i=26500,acc=0.1600
+i=26600,acc=0.1600
+i=26700,acc=0.1400
+i=26800,acc=0.2000
+i=26900,acc=0.2000
+i=27000,acc=0.2000
+
+i=27000,test_acc=0.7635
+
+i=27100,acc=0.2600
+i=27200,acc=0.2000
+i=27300,acc=0.1800
+i=27400,acc=0.2000
+i=27500,acc=0.2000
+i=27600,acc=0.2200
+i=27700,acc=0.2400
+i=27800,acc=0.2400
+i=27900,acc=0.2000
+i=28000,acc=0.2000
+
+i=28000,test_acc=0.8612
+
+i=28100,acc=0.1600
+i=28200,acc=0.1800
+i=28300,acc=0.2000
+i=28400,acc=0.1800
+i=28500,acc=0.1400
+i=28600,acc=0.2200
+i=28700,acc=0.2200
+i=28800,acc=0.1800
+i=28900,acc=0.1400
+i=29000,acc=0.2000
+
+i=29000,test_acc=0.8075
+
+i=29100,acc=0.1400
+i=29200,acc=0.2400
+i=29300,acc=0.1600
+i=29400,acc=0.2400
+i=29500,acc=0.2000
+i=29600,acc=0.2400
+i=29700,acc=0.2000
+i=29800,acc=0.1600
+i=29900,acc=0.1600
+i=30000,acc=0.1600
+
+i=30000,test_acc=0.8079
+
+i=30100,acc=0.1400
+i=30200,acc=0.1600
+i=30300,acc=0.1800
+i=30400,acc=0.2200
+i=30500,acc=0.1400
+i=30600,acc=0.1800
+i=30700,acc=0.1600
+i=30800,acc=0.1800
+i=30900,acc=0.1600
+i=31000,acc=0.1600
+
+i=31000,test_acc=0.8130
+
+i=31100,acc=0.1600
+i=31200,acc=0.2400
+i=31300,acc=0.1800
+i=31400,acc=0.2200
+i=31500,acc=0.1600
+i=31600,acc=0.2000
+i=31700,acc=0.2200
+i=31800,acc=0.1600
+i=31900,acc=0.2200
+i=32000,acc=0.1600
+
+i=32000,test_acc=0.8158
+
+i=32100,acc=0.2400
+i=32200,acc=0.1400
+i=32300,acc=0.1800
+i=32400,acc=0.1600
+i=32500,acc=0.1600
+i=32600,acc=0.1600
+i=32700,acc=0.2400
+i=32800,acc=0.1600
+i=32900,acc=0.1800
+i=33000,acc=0.2000
+
+i=33000,test_acc=0.8685
+
+i=33100,acc=0.1800
+i=33200,acc=0.1800
+i=33300,acc=0.1800
+i=33400,acc=0.1800
+i=33500,acc=0.1800
+i=33600,acc=0.1400
+i=33700,acc=0.2400
+i=33800,acc=0.1800
+i=33900,acc=0.1600
+i=34000,acc=0.1800
+
+i=34000,test_acc=0.8413
+
+i=34100,acc=0.2000
+i=34200,acc=0.1600
+i=34300,acc=0.1800
+i=34400,acc=0.1400
+i=34500,acc=0.1800
+i=34600,acc=0.2000
+i=34700,acc=0.1800
+i=34800,acc=0.1600
+i=34900,acc=0.1800
+i=35000,acc=0.1800
+
+i=35000,test_acc=0.8769
+
+i=35100,acc=0.1600
+i=35200,acc=0.1800
+i=35300,acc=0.2000
+i=35400,acc=0.1600
+i=35500,acc=0.2200
+i=35600,acc=0.2000
+i=35700,acc=0.1600
+i=35800,acc=0.1800
+i=35900,acc=0.2200
+i=36000,acc=0.1600
+
+i=36000,test_acc=0.8733
+
+i=36100,acc=0.1600
+i=36200,acc=0.1800
+i=36300,acc=0.1800
+i=36400,acc=0.2000
+i=36500,acc=0.2000
+i=36600,acc=0.2200
+i=36700,acc=0.2000
+i=36800,acc=0.1800
+i=36900,acc=0.2200
+i=37000,acc=0.2000
+
+i=37000,test_acc=0.8738
+
+i=37100,acc=0.2000
+i=37200,acc=0.1600
+i=37300,acc=0.1600
+i=37400,acc=0.2000
+i=37500,acc=0.2000
+i=37600,acc=0.2200
+i=37700,acc=0.1600
+i=37800,acc=0.1600
+i=37900,acc=0.1800
+i=38000,acc=0.2200
+
+i=38000,test_acc=0.8791
+
+i=38100,acc=0.1800
+i=38200,acc=0.1800
+i=38300,acc=0.2000
+i=38400,acc=0.1800
+i=38500,acc=0.1800
+i=38600,acc=0.2000
+i=38700,acc=0.2200
+i=38800,acc=0.1400
+i=38900,acc=0.2400
+i=39000,acc=0.1800
+
+i=39000,test_acc=0.8830
+
+i=39100,acc=0.1400
+i=39200,acc=0.1800
+i=39300,acc=0.1800
+i=39400,acc=0.1800
+i=39500,acc=0.1600
+i=39600,acc=0.2200
+i=39700,acc=0.2000
+i=39800,acc=0.1600
+i=39900,acc=0.2000
+i=40000,acc=0.2000
+
+i=40000,test_acc=0.7610
+
+i=40100,acc=0.1600
+i=40200,acc=0.1600
+i=40300,acc=0.1800
+i=40400,acc=0.1800
+i=40500,acc=0.2000
+i=40600,acc=0.1800
+i=40700,acc=0.1800
+i=40800,acc=0.2000
+i=40900,acc=0.1400
+i=41000,acc=0.1600
+
+i=41000,test_acc=0.8791
+
+i=41100,acc=0.1600
+i=41200,acc=0.1800
+i=41300,acc=0.2000
+i=41400,acc=0.1800
+i=41500,acc=0.2000
+i=41600,acc=0.2000
+i=41700,acc=0.2000
+i=41800,acc=0.2200
+i=41900,acc=0.2000
+i=42000,acc=0.2000
+
+i=42000,test_acc=0.8903
+
+i=42100,acc=0.1800
+i=42200,acc=0.1600
+i=42300,acc=0.1800
+i=42400,acc=0.2000
+i=42500,acc=0.2200
+i=42600,acc=0.1800
+i=42700,acc=0.2000
+i=42800,acc=0.2000
+i=42900,acc=0.1800
+i=43000,acc=0.1600
+
+i=43000,test_acc=0.8934
+
+i=43100,acc=0.1600
+i=43200,acc=0.2000
+i=43300,acc=0.1000
+i=43400,acc=0.2200
+i=43500,acc=0.1600
+i=43600,acc=0.2200
+i=43700,acc=0.1800
+i=43800,acc=0.2000
+i=43900,acc=0.1800
+i=44000,acc=0.1600
+
+i=44000,test_acc=0.8750
+
+i=44100,acc=0.1800
+i=44200,acc=0.1800
+i=44300,acc=0.1800
+i=44400,acc=0.2200
+i=44500,acc=0.2000
+i=44600,acc=0.2000
+i=44700,acc=0.2200
+i=44800,acc=0.1600
+i=44900,acc=0.1800
+i=45000,acc=0.1600
+
+i=45000,test_acc=0.8990
+
+i=45100,acc=0.2000
+i=45200,acc=0.1600
+i=45300,acc=0.1400
+i=45400,acc=0.2200
+i=45500,acc=0.1800
+i=45600,acc=0.1800
+i=45700,acc=0.2200
+i=45800,acc=0.2400
+i=45900,acc=0.1800
+i=46000,acc=0.1800
+
+i=46000,test_acc=0.8879
+
+i=46100,acc=0.2000
+i=46200,acc=0.2000
+i=46300,acc=0.2800
+i=46400,acc=0.1600
+i=46500,acc=0.1600
+i=46600,acc=0.2000
+i=46700,acc=0.2400
+i=46800,acc=0.2000
+i=46900,acc=0.1800
+i=47000,acc=0.1800
+
+i=47000,test_acc=0.8570
+
+i=47100,acc=0.1800
+i=47200,acc=0.2000
+i=47300,acc=0.1400
+i=47400,acc=0.2200
+i=47500,acc=0.1800
+i=47600,acc=0.2000
+i=47700,acc=0.1800
+i=47800,acc=0.1600
+i=47900,acc=0.1400
+i=48000,acc=0.1800
+
+i=48000,test_acc=0.9226
+
+i=48100,acc=0.1800
+i=48200,acc=0.2000
+i=48300,acc=0.1600
+i=48400,acc=0.2200
+i=48500,acc=0.2200
+i=48600,acc=0.2000
+i=48700,acc=0.1800
+i=48800,acc=0.2000
+i=48900,acc=0.1800
+i=49000,acc=0.1800
+
+i=49000,test_acc=0.9031
+
+i=49100,acc=0.2200
+i=49200,acc=0.2000
+i=49300,acc=0.2000
+i=49400,acc=0.2000
+i=49500,acc=0.1800
+i=49600,acc=0.2000
+i=49700,acc=0.1800
+i=49800,acc=0.1600
+i=49900,acc=0.1800
+
+test_acc=0.9106
+
+#configure: vector=True,out_dim=100,batch_size=50,drop_prob=1.0000,mistake_rate=0.8000,dynamic_lr=0
+i=0,acc=0.1200
+
+i=0,test_acc=0.0722
 
 i=100,acc=0.0600
-i=200,acc=0.1400
+i=200,acc=0.1200
 i=300,acc=0.0600
 i=400,acc=0.1000
-i=500,acc=0.1600
-i=600,acc=0.1600
-i=700,acc=0.1000
-i=800,acc=0.1600
-i=900,acc=0.0400
-i=1000,acc=0.1400
-
-i=1000,test_acc=0.2577
-
-i=1100,acc=0.1000
-i=1200,acc=0.0800
-i=1300,acc=0.1400
-i=1400,acc=0.0600
-i=1500,acc=0.1000
-i=1600,acc=0.3200
-i=1700,acc=0.2000
-i=1800,acc=0.1000
-i=1900,acc=0.1800
-i=2000,acc=0.2200
-
-i=2000,test_acc=0.3710
-
-i=2100,acc=0.1400
-i=2200,acc=0.1600
-i=2300,acc=0.1800
-i=2400,acc=0.1400
-i=2500,acc=0.2200
-i=2600,acc=0.2400
-i=2700,acc=0.2600
-i=2800,acc=0.1000
-i=2900,acc=0.1800
-i=3000,acc=0.1600
-
-i=3000,test_acc=0.5351
-
-i=3100,acc=0.2400
-i=3200,acc=0.2400
-i=3300,acc=0.1400
-i=3400,acc=0.2800
-i=3500,acc=0.2000
-i=3600,acc=0.1600
-i=3700,acc=0.2600
-i=3800,acc=0.2400
-i=3900,acc=0.3600
-i=4000,acc=0.2000
-
-i=4000,test_acc=0.6350
-
-i=4100,acc=0.2200
-i=4200,acc=0.3200
-i=4300,acc=0.2200
-i=4400,acc=0.2000
-i=4500,acc=0.2800
-i=4600,acc=0.1600
-i=4700,acc=0.4200
-i=4800,acc=0.2800
-i=4900,acc=0.2600
-i=5000,acc=0.2800
-
-i=5000,test_acc=0.6642
-
-i=5100,acc=0.2400
-i=5200,acc=0.2600
-i=5300,acc=0.2800
-i=5400,acc=0.2400
-i=5500,acc=0.3000
-i=5600,acc=0.3000
-i=5700,acc=0.3400
-i=5800,acc=0.2800
-i=5900,acc=0.2200
-i=6000,acc=0.3200
-
-i=6000,test_acc=0.7143
-
-i=6100,acc=0.3200
-i=6200,acc=0.2400
-i=6300,acc=0.2600
-i=6400,acc=0.4000
-i=6500,acc=0.2600
-i=6600,acc=0.2000
-i=6700,acc=0.2600
-i=6800,acc=0.2200
-i=6900,acc=0.3000
-i=7000,acc=0.2000
-
-i=7000,test_acc=0.8113
-
-i=7100,acc=0.2800
-i=7200,acc=0.3000
-i=7300,acc=0.3600
-i=7400,acc=0.3400
-i=7500,acc=0.2600
-i=7600,acc=0.3000
-i=7700,acc=0.3600
-i=7800,acc=0.2200
-i=7900,acc=0.3400
-i=8000,acc=0.2600
-
-i=8000,test_acc=0.8455
-
-i=8100,acc=0.3200
-i=8200,acc=0.2600
-i=8300,acc=0.2200
-i=8400,acc=0.2800
-i=8500,acc=0.2600
-i=8600,acc=0.3600
-i=8700,acc=0.3400
-i=8800,acc=0.3200
-i=8900,acc=0.3800
-i=9000,acc=0.3400
-
-i=9000,test_acc=0.8762
-
-i=9100,acc=0.3000
-i=9200,acc=0.3600
-i=9300,acc=0.2200
-i=9400,acc=0.3400
-i=9500,acc=0.3400
-i=9600,acc=0.3600
-i=9700,acc=0.3000
-i=9800,acc=0.3600
-i=9900,acc=0.3400
-i=10000,acc=0.3400
-
-i=10000,test_acc=0.9001
-
-i=10100,acc=0.2400
-i=10200,acc=0.3600
-i=10300,acc=0.3400
-i=10400,acc=0.3400
-i=10500,acc=0.4000
-i=10600,acc=0.3400
-i=10700,acc=0.3600
-i=10800,acc=0.3000
-i=10900,acc=0.3400
-i=11000,acc=0.4000
-
-i=11000,test_acc=0.9111
-
-i=11100,acc=0.3800
-i=11200,acc=0.2400
-i=11300,acc=0.3000
-i=11400,acc=0.3600
-i=11500,acc=0.2400
-i=11600,acc=0.3600
-i=11700,acc=0.3800
-i=11800,acc=0.3600
-i=11900,acc=0.3200
-i=12000,acc=0.3600
-
-i=12000,test_acc=0.9291
-
-i=12100,acc=0.3400
-i=12200,acc=0.3400
-i=12300,acc=0.3000
-i=12400,acc=0.2600
-i=12500,acc=0.2400
-i=12600,acc=0.3600
-i=12700,acc=0.3600
-i=12800,acc=0.3600
-i=12900,acc=0.2600
-i=13000,acc=0.3000
-
-i=13000,test_acc=0.9259
-
-i=13100,acc=0.4400
-i=13200,acc=0.3600
-i=13300,acc=0.2800
-i=13400,acc=0.4400
-i=13500,acc=0.3400
-i=13600,acc=0.3200
-i=13700,acc=0.3200
-i=13800,acc=0.3800
-i=13900,acc=0.3400
-i=14000,acc=0.2600
-
-i=14000,test_acc=0.9364
-
-i=14100,acc=0.2800
-i=14200,acc=0.4000
-i=14300,acc=0.2400
-i=14400,acc=0.3600
-i=14500,acc=0.3000
-i=14600,acc=0.2800
-i=14700,acc=0.3600
-i=14800,acc=0.3600
-i=14900,acc=0.3600
-i=15000,acc=0.3200
-
-i=15000,test_acc=0.9392
-
-i=15100,acc=0.3600
-i=15200,acc=0.3600
-i=15300,acc=0.3400
-i=15400,acc=0.3400
-i=15500,acc=0.3800
-i=15600,acc=0.3600
-i=15700,acc=0.3600
-i=15800,acc=0.3600
-i=15900,acc=0.3400
-i=16000,acc=0.3000
-
-i=16000,test_acc=0.9397
-
-i=16100,acc=0.4200
-i=16200,acc=0.3200
-i=16300,acc=0.3600
-i=16400,acc=0.3000
-i=16500,acc=0.2800
-i=16600,acc=0.3400
-i=16700,acc=0.3600
-i=16800,acc=0.3200
-i=16900,acc=0.3600
-i=17000,acc=0.3800
-
-i=17000,test_acc=0.9524
-
-i=17100,acc=0.3800
-i=17200,acc=0.4200
-i=17300,acc=0.3600
-i=17400,acc=0.4000
-i=17500,acc=0.2600
-i=17600,acc=0.2800
-i=17700,acc=0.3200
-i=17800,acc=0.4200
-i=17900,acc=0.3800
-i=18000,acc=0.3600
-
-i=18000,test_acc=0.9571
-
-i=18100,acc=0.3400
-i=18200,acc=0.3600
-i=18300,acc=0.4600
-i=18400,acc=0.3600
-i=18500,acc=0.3800
-i=18600,acc=0.2400
-i=18700,acc=0.3000
-i=18800,acc=0.3200
-i=18900,acc=0.4000
-i=19000,acc=0.4000
-
-i=19000,test_acc=0.9545
-
-i=19100,acc=0.2800
-i=19200,acc=0.3800
-i=19300,acc=0.3600
-i=19400,acc=0.3600
-i=19500,acc=0.3600
-i=19600,acc=0.3800
-i=19700,acc=0.3200
-i=19800,acc=0.4000
-i=19900,acc=0.3200
-
-test_acc=0.9601
-
-#configure: vector=True,out_dim=10,batch_size=50,drop_prob=1.0000,mistake_rate=0.8000,dynamic_lr=0
-#configure: vector=True,out_dim=10,batch_size=50,drop_prob=1.0000,mistake_rate=0.8000,dynamic_lr=0
-i=0,acc=0.1600
-
-i=0,test_acc=0.0952
-
-i=100,acc=0.1400
-i=200,acc=0.2000
-i=300,acc=0.3600
-i=400,acc=0.2000
-i=500,acc=0.1600
-i=600,acc=0.2200
-i=700,acc=0.2600
-i=800,acc=0.3000
-i=900,acc=0.3600
-i=1000,acc=0.4000
-
-i=1000,test_acc=0.3055
-
-i=1100,acc=0.1600
-i=1200,acc=0.2200
-i=1300,acc=0.2800
-i=1400,acc=0.3600
-i=1500,acc=0.2800
-i=1600,acc=0.3000
-i=1700,acc=0.3800
-i=1800,acc=0.3400
-i=1900,acc=0.2600
-i=2000,acc=0.4000
-
-i=2000,test_acc=0.3888
-
-i=2100,acc=0.4000
-i=2200,acc=0.4000
-i=2300,acc=0.3200
-i=2400,acc=0.4200
-i=2500,acc=0.4200
-i=2600,acc=0.3200
-i=2700,acc=0.4800
-i=2800,acc=0.4600
-i=2900,acc=0.5000
-i=3000,acc=0.5600
-
-i=3000,test_acc=0.4950
-
-i=3100,acc=0.4400
-i=3200,acc=0.4400
-i=3300,acc=0.5400
-i=3400,acc=0.5000
-i=3500,acc=0.4600
-i=3600,acc=0.5000
-i=3700,acc=0.2800
-i=3800,acc=0.5400
-i=3900,acc=0.4400
-i=4000,acc=0.6200
-
-i=4000,test_acc=0.5251
-
-i=4100,acc=0.6800
-i=4200,acc=0.5600
-i=4300,acc=0.6600
-i=4400,acc=0.5400
-i=4500,acc=0.5000
-i=4600,acc=0.5000
-i=4700,acc=0.7000
-i=4800,acc=0.6200
-i=4900,acc=0.7000
-i=5000,acc=0.5800
-
-i=5000,test_acc=0.5800
-
-i=5100,acc=0.5600
-i=5200,acc=0.7400
-i=5300,acc=0.7000
-i=5400,acc=0.7000
-i=5500,acc=0.7800
-i=5600,acc=0.5800
-i=5700,acc=0.6600
-i=5800,acc=0.6800
-i=5900,acc=0.7000
-i=6000,acc=0.7400
-
-i=6000,test_acc=0.7584
-
-i=6100,acc=0.6000
-i=6200,acc=0.8600
-i=6300,acc=0.7400
-i=6400,acc=0.7000
-i=6500,acc=0.7000
-i=6600,acc=0.8400
-i=6700,acc=0.7400
-i=6800,acc=0.8600
-i=6900,acc=0.7600
-i=7000,acc=0.7600
-
-i=7000,test_acc=0.7322
-
-i=7100,acc=0.8000
-i=7200,acc=0.8600
-i=7300,acc=0.8600
-i=7400,acc=0.8000
-i=7500,acc=0.8800
-i=7600,acc=0.8400
-i=7700,acc=0.8000
-i=7800,acc=0.8000
-i=7900,acc=0.8800
-i=8000,acc=0.8400
-
-i=8000,test_acc=0.8547
-
-i=8100,acc=0.9000
-i=8200,acc=0.8800
-i=8300,acc=0.8800
-i=8400,acc=0.8400
-i=8500,acc=0.8800
-i=8600,acc=0.8400
-i=8700,acc=0.8800
-i=8800,acc=0.9000
-i=8900,acc=0.8800
-i=9000,acc=0.8400
-
-i=9000,test_acc=0.8875
-
-i=9100,acc=0.8200
-i=9200,acc=0.9000
-i=9300,acc=0.9200
-i=9400,acc=0.9600
-i=9500,acc=0.9200
-i=9600,acc=0.8200
-i=9700,acc=0.8800
-i=9800,acc=0.8600
-i=9900,acc=0.8400
-i=10000,acc=0.9400
-
-i=10000,test_acc=0.8974
-
-i=10100,acc=0.9000
-i=10200,acc=0.8800
-i=10300,acc=0.9800
-i=10400,acc=0.9400
-i=10500,acc=0.8600
-i=10600,acc=0.8400
-i=10700,acc=0.9000
-i=10800,acc=0.9000
-i=10900,acc=0.8800
-i=11000,acc=0.9000
-
-i=11000,test_acc=0.9179
-
-i=11100,acc=0.9400
-i=11200,acc=0.8600
-i=11300,acc=0.9200
-i=11400,acc=0.9600
-i=11500,acc=0.9800
-i=11600,acc=0.9800
-i=11700,acc=0.9200
-i=11800,acc=0.9000
-i=11900,acc=0.9400
-i=12000,acc=0.9600
-
-i=12000,test_acc=0.9349
-
-i=12100,acc=0.9400
-i=12200,acc=0.9400
-i=12300,acc=0.9200
-i=12400,acc=0.9000
-i=12500,acc=0.8600
-i=12600,acc=0.9000
-i=12700,acc=0.9400
-i=12800,acc=0.9200
-i=12900,acc=0.8600
-i=13000,acc=0.9600
-
-i=13000,test_acc=0.9381
-
-i=13100,acc=0.9400
-i=13200,acc=0.9400
-i=13300,acc=0.9600
-i=13400,acc=0.8600
-i=13500,acc=0.9400
-i=13600,acc=0.9400
-i=13700,acc=0.9800
-i=13800,acc=0.9200
-i=13900,acc=0.9800
-i=14000,acc=1.0000
-
-i=14000,test_acc=0.9454
-
-i=14100,acc=0.9800
-i=14200,acc=0.9600
-i=14300,acc=1.0000
-i=14400,acc=0.9600
-i=14500,acc=1.0000
-i=14600,acc=0.9400
-i=14700,acc=0.9600
-i=14800,acc=0.9800
-i=14900,acc=0.9200
-i=15000,acc=1.0000
-
-i=15000,test_acc=0.9489
-
-i=15100,acc=0.9600
-i=15200,acc=0.9600
-i=15300,acc=0.9600
-i=15400,acc=0.9200
-i=15500,acc=0.9800
-i=15600,acc=0.9200
-i=15700,acc=0.9400
-i=15800,acc=0.9400
-i=15900,acc=0.9600
-i=16000,acc=0.9600
-#configure: vector=True,out_dim=10,batch_size=50,drop_prob=1.0000,mistake_rate=1.0000,dynamic_lr=0
-i=0,acc=0.0000
-
-i=0,test_acc=0.0594
-
-i=100,acc=0.1200
-i=200,acc=0.1800
-i=300,acc=0.1200
-i=400,acc=0.1000
-i=500,acc=0.3000
-i=600,acc=0.1400
+i=500,acc=0.1400
+i=600,acc=0.0800
 i=700,acc=0.2000
-i=800,acc=0.2600
-i=900,acc=0.1400
-i=1000,acc=0.3000
+i=800,acc=0.1000
+i=900,acc=0.1800
+i=1000,acc=0.0400
 
-i=1000,test_acc=0.2368
+i=1000,test_acc=0.1876
 
-i=1100,acc=0.2400
-i=1200,acc=0.2600
-i=1300,acc=0.1800
-i=1400,acc=0.1800
-i=1500,acc=0.2400
-i=1600,acc=0.4400
-i=1700,acc=0.1600
-i=1800,acc=0.2800
-i=1900,acc=0.2600
-i=2000,acc=0.2800
+i=1100,acc=0.0800
+i=1200,acc=0.0800
+i=1300,acc=0.0800
+i=1400,acc=0.1600
+i=1500,acc=0.1000
+i=1600,acc=0.1400
+i=1700,acc=0.0600
+i=1800,acc=0.1200
+i=1900,acc=0.1400
+i=2000,acc=0.1600
 
-i=2000,test_acc=0.3181
+i=2000,test_acc=0.2392
 
-i=2100,acc=0.3000
-i=2200,acc=0.3800
-i=2300,acc=0.4200
-i=2400,acc=0.5200
-i=2500,acc=0.3800
-i=2600,acc=0.3200
-i=2700,acc=0.3800
-i=2800,acc=0.3600
-i=2900,acc=0.3600
-i=3000,acc=0.3400
+i=2100,acc=0.2000
+i=2200,acc=0.0800
+i=2300,acc=0.1000
+i=2400,acc=0.0800
+i=2500,acc=0.1800
+i=2600,acc=0.1200
+i=2700,acc=0.1800
+i=2800,acc=0.1800
+i=2900,acc=0.0800
+i=3000,acc=0.1400
 
-i=3000,test_acc=0.4189
+i=3000,test_acc=0.2250
 
-i=3100,acc=0.3600
-i=3200,acc=0.4400
-i=3300,acc=0.3600
-i=3400,acc=0.4400
-i=3500,acc=0.5000
-i=3600,acc=0.5800
-i=3700,acc=0.5000
-i=3800,acc=0.5200
-i=3900,acc=0.4600
-i=4000,acc=0.6800
+i=3100,acc=0.0200
+i=3200,acc=0.2200
+i=3300,acc=0.0800
+i=3400,acc=0.0200
+i=3500,acc=0.1000
+i=3600,acc=0.2600
+i=3700,acc=0.1200
+i=3800,acc=0.0800
+i=3900,acc=0.1200
+i=4000,acc=0.1200
 
-i=4000,test_acc=0.5274
+i=4000,test_acc=0.2699
 
-i=4100,acc=0.5800
-i=4200,acc=0.5000
-i=4300,acc=0.5200
-i=4400,acc=0.4400
-i=4500,acc=0.5400
-i=4600,acc=0.4600
-i=4700,acc=0.5000
-i=4800,acc=0.6200
-i=4900,acc=0.5000
-i=5000,acc=0.6000
+i=4100,acc=0.0600
+i=4200,acc=0.2400
+i=4300,acc=0.0800
+i=4400,acc=0.1000
+i=4500,acc=0.0800
+i=4600,acc=0.2000
+i=4700,acc=0.0800
+i=4800,acc=0.1600
+i=4900,acc=0.1400
+i=5000,acc=0.1400
 
-i=5000,test_acc=0.5904
+i=5000,test_acc=0.3182
 
-i=5100,acc=0.6400
-i=5200,acc=0.6600
-i=5300,acc=0.6600
-i=5400,acc=0.6800
-i=5500,acc=0.7400
-i=5600,acc=0.7400
-i=5700,acc=0.7600
-i=5800,acc=0.5800
-i=5900,acc=0.8400
-i=6000,acc=0.6400
+i=5100,acc=0.1200
+i=5200,acc=0.0800
+i=5300,acc=0.1000
+i=5400,acc=0.1400
+i=5500,acc=0.1000
+i=5600,acc=0.1000
+i=5700,acc=0.2000
+i=5800,acc=0.1000
+i=5900,acc=0.1400
+i=6000,acc=0.1200
 
-i=6000,test_acc=0.6933
+i=6000,test_acc=0.3804
 
-i=6100,acc=0.6800
-i=6200,acc=0.7400
-i=6300,acc=0.7200
-i=6400,acc=0.7200
-i=6500,acc=0.6800
-i=6600,acc=0.8200
-i=6700,acc=0.7000
-i=6800,acc=0.7400
-i=6900,acc=0.7600
-i=7000,acc=0.6400
+i=6100,acc=0.2200
+i=6200,acc=0.0400
+i=6300,acc=0.1400
+i=6400,acc=0.1400
+i=6500,acc=0.1400
+i=6600,acc=0.2600
+i=6700,acc=0.1400
+i=6800,acc=0.1800
+i=6900,acc=0.1800
+i=7000,acc=0.1400
 
-i=7000,test_acc=0.7202
+i=7000,test_acc=0.4464
 
-i=7100,acc=0.7200
-i=7200,acc=0.7800
-i=7300,acc=0.8000
-i=7400,acc=0.6200
-i=7500,acc=0.7400
-i=7600,acc=0.8200
-i=7700,acc=0.7400
-i=7800,acc=0.8400
-i=7900,acc=0.8800
-i=8000,acc=0.8400
+i=7100,acc=0.1800
+i=7200,acc=0.1400
+i=7300,acc=0.1200
+i=7400,acc=0.1600
+i=7500,acc=0.0400
+i=7600,acc=0.1200
+i=7700,acc=0.1200
+i=7800,acc=0.1000
+i=7900,acc=0.1000
+i=8000,acc=0.1400
 
-i=8000,test_acc=0.8375
+i=8000,test_acc=0.4889
 
-i=8100,acc=0.8400
-i=8200,acc=0.8800
-i=8300,acc=0.7800
-i=8400,acc=0.8800
-i=8500,acc=0.8600
-i=8600,acc=0.8200
-i=8700,acc=0.8400
-i=8800,acc=0.8000
-i=8900,acc=0.8000
-i=9000,acc=0.9400
+i=8100,acc=0.1400
+i=8200,acc=0.1000
+i=8300,acc=0.2200
+i=8400,acc=0.1200
+i=8500,acc=0.1400
+i=8600,acc=0.1200
+i=8700,acc=0.1800
+i=8800,acc=0.1200
+i=8900,acc=0.2200
+i=9000,acc=0.1000
 
-i=9000,test_acc=0.8636
+i=9000,test_acc=0.5358
 
-i=9100,acc=0.8000
-i=9200,acc=0.8200
-i=9300,acc=0.9000
-i=9400,acc=0.8600
-i=9500,acc=0.8000
-i=9600,acc=0.7800
-i=9700,acc=0.8800
-i=9800,acc=0.8800
-i=9900,acc=0.9200
-i=10000,acc=0.8600
+i=9100,acc=0.1800
+i=9200,acc=0.1600
+i=9300,acc=0.1200
+i=9400,acc=0.2200
+i=9500,acc=0.2400
+i=9600,acc=0.1600
+i=9700,acc=0.2000
+i=9800,acc=0.1200
+i=9900,acc=0.1600
+i=10000,acc=0.1400
 
-i=10000,test_acc=0.8983
+i=10000,test_acc=0.6197
 
-i=10100,acc=0.9600
-i=10200,acc=0.9400
-i=10300,acc=0.8800
-i=10400,acc=0.8800
-i=10500,acc=0.9200
-i=10600,acc=0.9400
-i=10700,acc=0.9000
-i=10800,acc=0.9000
-i=10900,acc=0.8800
-i=11000,acc=0.9400
+i=10100,acc=0.1200
+i=10200,acc=0.1800
+i=10300,acc=0.1600
+i=10400,acc=0.1600
+i=10500,acc=0.1400
+i=10600,acc=0.1800
+i=10700,acc=0.1400
+i=10800,acc=0.1400
+i=10900,acc=0.1200
+i=11000,acc=0.2200
 
-i=11000,test_acc=0.9166
+i=11000,test_acc=0.7023
 
-i=11100,acc=0.8400
-i=11200,acc=0.8800
-i=11300,acc=0.7800
-i=11400,acc=0.8800
-i=11500,acc=0.9000
-i=11600,acc=1.0000
-i=11700,acc=0.9200
-i=11800,acc=1.0000
-i=11900,acc=0.9200
-i=12000,acc=0.9200
+i=11100,acc=0.0800
+i=11200,acc=0.1800
+i=11300,acc=0.1400
+i=11400,acc=0.2200
+i=11500,acc=0.1200
+i=11600,acc=0.1200
+i=11700,acc=0.1200
+i=11800,acc=0.1400
+i=11900,acc=0.1800
+i=12000,acc=0.2000
 
-i=12000,test_acc=0.9249
+i=12000,test_acc=0.7147
 
-i=12100,acc=0.9800
-i=12200,acc=0.8800
-i=12300,acc=0.8800
-i=12400,acc=0.9000
-i=12500,acc=0.8400
-i=12600,acc=0.9600
-i=12700,acc=0.9600
-i=12800,acc=0.9800
-i=12900,acc=0.9400
-i=13000,acc=0.9600
+i=12100,acc=0.1800
+i=12200,acc=0.1800
+i=12300,acc=0.1200
+i=12400,acc=0.1200
+i=12500,acc=0.1600
+i=12600,acc=0.1800
+i=12700,acc=0.2600
+i=12800,acc=0.2000
+i=12900,acc=0.1400
+i=13000,acc=0.1800
 
-i=13000,test_acc=0.9348
+i=13000,test_acc=0.7714
 
-i=13100,acc=0.8400
-i=13200,acc=0.9600
-i=13300,acc=0.9200
-i=13400,acc=0.8600
-i=13500,acc=0.9600
-i=13600,acc=0.9000
-i=13700,acc=0.9000
-i=13800,acc=0.8400
-i=13900,acc=0.9200
-i=14000,acc=0.9000
+i=13100,acc=0.2200
+i=13200,acc=0.1200
+i=13300,acc=0.2000
+i=13400,acc=0.1200
+i=13500,acc=0.2200
+i=13600,acc=0.1600
+i=13700,acc=0.1000
+i=13800,acc=0.1800
+i=13900,acc=0.1800
+i=14000,acc=0.1800
 
-i=14000,test_acc=0.9427
+i=14000,test_acc=0.8012
 
-i=14100,acc=0.9600
-i=14200,acc=0.9400
-i=14300,acc=0.9200
-i=14400,acc=1.0000
-i=14500,acc=0.9400
-i=14600,acc=0.9600
-i=14700,acc=0.9800
-i=14800,acc=0.9200
-i=14900,acc=0.9600
-i=15000,acc=0.9600
+i=14100,acc=0.1200
+i=14200,acc=0.1600
+i=14300,acc=0.1600
+i=14400,acc=0.1400
+i=14500,acc=0.1800
+i=14600,acc=0.1400
+i=14700,acc=0.2000
+i=14800,acc=0.1800
+i=14900,acc=0.1400
+i=15000,acc=0.2200
 
-i=15000,test_acc=0.9467
+i=15000,test_acc=0.8127
 
-i=15100,acc=0.9400
-i=15200,acc=0.8800
-i=15300,acc=0.9200
-i=15400,acc=0.9400
-i=15500,acc=0.9800
-i=15600,acc=0.9000
-i=15700,acc=0.9800
-i=15800,acc=0.9400
-i=15900,acc=0.9600
-i=16000,acc=0.9400
+i=15100,acc=0.1800
+i=15200,acc=0.2000
+i=15300,acc=0.2000
+i=15400,acc=0.1400
+i=15500,acc=0.2000
+i=15600,acc=0.1600
+i=15700,acc=0.2200
+i=15800,acc=0.1600
+i=15900,acc=0.2000
+i=16000,acc=0.2000
+
+i=16000,test_acc=0.8039
+
+i=16100,acc=0.1800
+i=16200,acc=0.1800
+i=16300,acc=0.2000
+i=16400,acc=0.1600
+i=16500,acc=0.2200
+i=16600,acc=0.1800
+i=16700,acc=0.2200
+i=16800,acc=0.1600
+i=16900,acc=0.1600
+i=17000,acc=0.1800
+
+i=17000,test_acc=0.8248
+
+i=17100,acc=0.2000
+i=17200,acc=0.2000
+i=17300,acc=0.1600
+i=17400,acc=0.1400
+i=17500,acc=0.2000
+i=17600,acc=0.1600
+i=17700,acc=0.2400
+i=17800,acc=0.2000
+i=17900,acc=0.2200
+i=18000,acc=0.1800
+
+i=18000,test_acc=0.8306
+
+i=18100,acc=0.2000
+i=18200,acc=0.2400
+i=18300,acc=0.2200
+i=18400,acc=0.2000
+i=18500,acc=0.2000
+i=18600,acc=0.1600
+i=18700,acc=0.2200
+i=18800,acc=0.2200
+i=18900,acc=0.2000
+i=19000,acc=0.1600
+
+i=19000,test_acc=0.8549
+
+i=19100,acc=0.1200
+i=19200,acc=0.2000
+i=19300,acc=0.2000
+i=19400,acc=0.2200
+i=19500,acc=0.1400
+i=19600,acc=0.1400
+i=19700,acc=0.1600
+i=19800,acc=0.1800
+i=19900,acc=0.2000
+i=20000,acc=0.1600
+
+i=20000,test_acc=0.8713
+
+i=20100,acc=0.2000
+i=20200,acc=0.2200
+i=20300,acc=0.1800
+i=20400,acc=0.2400
+i=20500,acc=0.1800
+i=20600,acc=0.2200
+i=20700,acc=0.1800
+i=20800,acc=0.2200
+i=20900,acc=0.1400
+i=21000,acc=0.2200
+
+i=21000,test_acc=0.8672
+
+i=21100,acc=0.1800
+i=21200,acc=0.2400
+i=21300,acc=0.1600
+i=21400,acc=0.2000
+i=21500,acc=0.2000
+i=21600,acc=0.2000
+i=21700,acc=0.1800
+i=21800,acc=0.2200
+i=21900,acc=0.1600
+i=22000,acc=0.2000
+
+i=22000,test_acc=0.8579
+
+i=22100,acc=0.1600
+i=22200,acc=0.1600
+i=22300,acc=0.1800
+i=22400,acc=0.1800
+i=22500,acc=0.1800
+i=22600,acc=0.1800
+i=22700,acc=0.2200
+i=22800,acc=0.2000
+i=22900,acc=0.1600
+i=23000,acc=0.2000
+
+i=23000,test_acc=0.8913
+
+i=23100,acc=0.1800
+i=23200,acc=0.1600
+i=23300,acc=0.2000
+i=23400,acc=0.2000
+i=23500,acc=0.1600
+i=23600,acc=0.2000
+i=23700,acc=0.2000
+i=23800,acc=0.1600
+i=23900,acc=0.2000
+i=24000,acc=0.1800
+
+i=24000,test_acc=0.8695
+
+i=24100,acc=0.1800
+i=24200,acc=0.1800
+i=24300,acc=0.2000
+i=24400,acc=0.1800
+i=24500,acc=0.1800
+i=24600,acc=0.2200
+i=24700,acc=0.2200
+i=24800,acc=0.2400
+i=24900,acc=0.1200
+i=25000,acc=0.2000
+
+i=25000,test_acc=0.8852
+
+i=25100,acc=0.1600
+i=25200,acc=0.2000
+i=25300,acc=0.1800
+i=25400,acc=0.2000
+i=25500,acc=0.1600
+i=25600,acc=0.1200
+i=25700,acc=0.2200
+i=25800,acc=0.1800
+i=25900,acc=0.2000
+i=26000,acc=0.1800
+
+i=26000,test_acc=0.8977
+
+i=26100,acc=0.2000
+i=26200,acc=0.2200
+i=26300,acc=0.1800
+i=26400,acc=0.1800
+i=26500,acc=0.2200
+i=26600,acc=0.2400
+i=26700,acc=0.1200
+i=26800,acc=0.2000
+i=26900,acc=0.2000
+i=27000,acc=0.1800
+
+i=27000,test_acc=0.9017
+
+i=27100,acc=0.2200
+i=27200,acc=0.1800
+i=27300,acc=0.1200
+i=27400,acc=0.2000
+i=27500,acc=0.2200
+i=27600,acc=0.1600
+i=27700,acc=0.2200
+i=27800,acc=0.1800
+i=27900,acc=0.2000
+i=28000,acc=0.2000
+
+i=28000,test_acc=0.9101
+
+i=28100,acc=0.2200
+i=28200,acc=0.1800
+i=28300,acc=0.1600
+i=28400,acc=0.2200
+i=28500,acc=0.2000
+i=28600,acc=0.1800
+i=28700,acc=0.2000
+i=28800,acc=0.2000
+i=28900,acc=0.1600
+i=29000,acc=0.2000
+
+i=29000,test_acc=0.9141
+
+i=29100,acc=0.1800
+i=29200,acc=0.2400
+i=29300,acc=0.1800
+i=29400,acc=0.1800
+i=29500,acc=0.1800
+i=29600,acc=0.1600
+i=29700,acc=0.2000
+i=29800,acc=0.2000
+i=29900,acc=0.1800
+i=30000,acc=0.2000
+
+i=30000,test_acc=0.9037
+
+i=30100,acc=0.1600
+i=30200,acc=0.2400
+i=30300,acc=0.1600
+i=30400,acc=0.2000
+i=30500,acc=0.1400
+i=30600,acc=0.2200
+i=30700,acc=0.2000
+i=30800,acc=0.2000
+i=30900,acc=0.2200
+i=31000,acc=0.1800
+
+i=31000,test_acc=0.9043
+
+i=31100,acc=0.2200
+i=31200,acc=0.2000
+i=31300,acc=0.1800
+i=31400,acc=0.2200
+i=31500,acc=0.2000
+i=31600,acc=0.1800
+i=31700,acc=0.1800
+i=31800,acc=0.2000
+i=31900,acc=0.1800
+i=32000,acc=0.2000
+
+i=32000,test_acc=0.9165
+
+i=32100,acc=0.2000
+i=32200,acc=0.1600
+i=32300,acc=0.1800
+i=32400,acc=0.2000
+i=32500,acc=0.2000
+i=32600,acc=0.2000
+i=32700,acc=0.2000
+i=32800,acc=0.2200
+i=32900,acc=0.1800
+i=33000,acc=0.2000
+
+i=33000,test_acc=0.9227
+
+i=33100,acc=0.1600
+i=33200,acc=0.2000
+i=33300,acc=0.1800
+i=33400,acc=0.2000
+i=33500,acc=0.2200
+i=33600,acc=0.1600
+i=33700,acc=0.2400
+i=33800,acc=0.1800
+i=33900,acc=0.2000
+i=34000,acc=0.2000
+
+i=34000,test_acc=0.9143
+
+i=34100,acc=0.1800
+i=34200,acc=0.1600
+i=34300,acc=0.2000
+i=34400,acc=0.2000
+i=34500,acc=0.1600
+i=34600,acc=0.2000
+i=34700,acc=0.2000
+i=34800,acc=0.2000
+i=34900,acc=0.2000
+i=35000,acc=0.2200
+
+i=35000,test_acc=0.9153
+
+i=35100,acc=0.2000
+i=35200,acc=0.2200
+i=35300,acc=0.1800
+i=35400,acc=0.2000
+i=35500,acc=0.2600
+i=35600,acc=0.2000
+i=35700,acc=0.1800
+i=35800,acc=0.1800
+i=35900,acc=0.1800
+i=36000,acc=0.2200
+
+i=36000,test_acc=0.9052
+
+i=36100,acc=0.2000
+i=36200,acc=0.2200
+i=36300,acc=0.2200
+i=36400,acc=0.2200
+i=36500,acc=0.2200
+i=36600,acc=0.2000
+i=36700,acc=0.2600
+i=36800,acc=0.1800
+i=36900,acc=0.2200
+i=37000,acc=0.1800
+
+i=37000,test_acc=0.9271
+
+i=37100,acc=0.2000
+i=37200,acc=0.2200
+i=37300,acc=0.1600
+i=37400,acc=0.2000
+i=37500,acc=0.1800
+i=37600,acc=0.2000
+i=37700,acc=0.1600
+i=37800,acc=0.1200
+i=37900,acc=0.2000
+i=38000,acc=0.1600
+
+i=38000,test_acc=0.9277
+
+i=38100,acc=0.2200
+i=38200,acc=0.1800
+i=38300,acc=0.1800
+i=38400,acc=0.2400
+i=38500,acc=0.1600
+i=38600,acc=0.1800
+i=38700,acc=0.2200
+i=38800,acc=0.1800
+i=38900,acc=0.1800
+i=39000,acc=0.2000
+
+i=39000,test_acc=0.9205
+
+i=39100,acc=0.2000
+i=39200,acc=0.1800
+i=39300,acc=0.2000
+i=39400,acc=0.2600
+i=39500,acc=0.2000
+i=39600,acc=0.1800
+i=39700,acc=0.2000
+i=39800,acc=0.1800
+i=39900,acc=0.2000
+i=40000,acc=0.2200
+
+i=40000,test_acc=0.9265
+
+i=40100,acc=0.1600
+i=40200,acc=0.2000
+i=40300,acc=0.1800
+i=40400,acc=0.2200
+i=40500,acc=0.1800
+i=40600,acc=0.2000
+i=40700,acc=0.2000
+i=40800,acc=0.2000
+i=40900,acc=0.2000
+i=41000,acc=0.1600
+
+i=41000,test_acc=0.9315
+
+i=41100,acc=0.2000
+i=41200,acc=0.2000
+i=41300,acc=0.2000
+i=41400,acc=0.2000
+i=41500,acc=0.1800
+i=41600,acc=0.1600
+i=41700,acc=0.2000
+i=41800,acc=0.2000
+i=41900,acc=0.2000
+i=42000,acc=0.2200
+
+i=42000,test_acc=0.9355
+
+i=42100,acc=0.1800
+i=42200,acc=0.1800
+i=42300,acc=0.2200
+i=42400,acc=0.1800
+i=42500,acc=0.2000
+i=42600,acc=0.2200
+i=42700,acc=0.2000
+i=42800,acc=0.2000
+i=42900,acc=0.2000
+i=43000,acc=0.2000
+
+i=43000,test_acc=0.9311
+
+i=43100,acc=0.1600
+i=43200,acc=0.1800
+i=43300,acc=0.1800
+i=43400,acc=0.1800
+i=43500,acc=0.2000
+i=43600,acc=0.2400
+i=43700,acc=0.1800
+i=43800,acc=0.2000
+i=43900,acc=0.2000
+i=44000,acc=0.1800
+
+i=44000,test_acc=0.9420
+
+i=44100,acc=0.2200
+i=44200,acc=0.2000
+i=44300,acc=0.2000
+i=44400,acc=0.2000
+i=44500,acc=0.2000
+i=44600,acc=0.1800
+i=44700,acc=0.2000
+i=44800,acc=0.2000
+i=44900,acc=0.2000
+i=45000,acc=0.1800
+
+i=45000,test_acc=0.9342
+
+i=45100,acc=0.1800
+i=45200,acc=0.2000
+i=45300,acc=0.2000
+i=45400,acc=0.2000
+i=45500,acc=0.1800
+i=45600,acc=0.2000
+i=45700,acc=0.2200
+i=45800,acc=0.2000
+i=45900,acc=0.2000
+i=46000,acc=0.2200
+
+i=46000,test_acc=0.9352
+
+i=46100,acc=0.1800
+i=46200,acc=0.2000
+i=46300,acc=0.1800
+i=46400,acc=0.2000
+i=46500,acc=0.2000
+i=46600,acc=0.2000
+i=46700,acc=0.1800
+i=46800,acc=0.1400
+i=46900,acc=0.2200
+i=47000,acc=0.1800
+
+i=47000,test_acc=0.9454
+
+i=47100,acc=0.2200
+i=47200,acc=0.2000
+i=47300,acc=0.2000
+i=47400,acc=0.1800
+i=47500,acc=0.2200
+i=47600,acc=0.2200
+i=47700,acc=0.1800
+i=47800,acc=0.2200
+i=47900,acc=0.2000
+i=48000,acc=0.2200
+
+i=48000,test_acc=0.9462
+
+i=48100,acc=0.1600
+i=48200,acc=0.1800
+i=48300,acc=0.1800
+i=48400,acc=0.2000
+i=48500,acc=0.2200
+i=48600,acc=0.2000
+i=48700,acc=0.2000
+i=48800,acc=0.1800
+i=48900,acc=0.2000
+i=49000,acc=0.1800
+
+i=49000,test_acc=0.9448
+
+i=49100,acc=0.2000
+i=49200,acc=0.1800
+i=49300,acc=0.1600
+i=49400,acc=0.2200
+i=49500,acc=0.2000
+i=49600,acc=0.2000
+i=49700,acc=0.2000
+i=49800,acc=0.1800
+i=49900,acc=0.2000
+i=50000,acc=0.2000
+
+i=50000,test_acc=0.9396
+
+i=50100,acc=0.2000
+i=50200,acc=0.1800
+i=50300,acc=0.2000
+i=50400,acc=0.1800
+i=50500,acc=0.2000
+i=50600,acc=0.2000
+i=50700,acc=0.1800
+i=50800,acc=0.1800
+i=50900,acc=0.2000
+i=51000,acc=0.2000
+
+i=51000,test_acc=0.9465
+
+i=51100,acc=0.1800
+i=51200,acc=0.1800
+i=51300,acc=0.1800
+i=51400,acc=0.2000
+i=51500,acc=0.1600
+i=51600,acc=0.1800
+i=51700,acc=0.1600
+i=51800,acc=0.2000
+i=51900,acc=0.2000
+i=52000,acc=0.2000
+
+i=52000,test_acc=0.9409
+
+i=52100,acc=0.1800
+i=52200,acc=0.1800
+i=52300,acc=0.1800
+i=52400,acc=0.2200
+i=52500,acc=0.2000
+i=52600,acc=0.1800
+i=52700,acc=0.2000
+i=52800,acc=0.1800
+i=52900,acc=0.2000
+i=53000,acc=0.2000
+
+i=53000,test_acc=0.9478
+
+i=53100,acc=0.1800
+i=53200,acc=0.2200
+i=53300,acc=0.1800
+i=53400,acc=0.2000
+i=53500,acc=0.2000
+i=53600,acc=0.2000
+i=53700,acc=0.2000
+i=53800,acc=0.2000
+i=53900,acc=0.1400
+i=54000,acc=0.2000
+
+i=54000,test_acc=0.9396
+
+i=54100,acc=0.1800
+i=54200,acc=0.1800
+i=54300,acc=0.1800
+i=54400,acc=0.1800
+i=54500,acc=0.2000
+i=54600,acc=0.2000
+i=54700,acc=0.2000
+i=54800,acc=0.2000
+i=54900,acc=0.2200
+i=55000,acc=0.2000
+
+i=55000,test_acc=0.9419
+
+i=55100,acc=0.2200
+i=55200,acc=0.1800
+i=55300,acc=0.2000
+i=55400,acc=0.2000
+i=55500,acc=0.2000
+i=55600,acc=0.2000
+i=55700,acc=0.2000
+i=55800,acc=0.1600
+i=55900,acc=0.2000
+i=56000,acc=0.1800
+
+i=56000,test_acc=0.9429
+
+i=56100,acc=0.2200
+i=56200,acc=0.2200
+i=56300,acc=0.1800
+i=56400,acc=0.1800
+i=56500,acc=0.1600
+i=56600,acc=0.1800
+i=56700,acc=0.1800
+i=56800,acc=0.2000
+i=56900,acc=0.2200
+i=57000,acc=0.1800
+
+i=57000,test_acc=0.9483
+
+i=57100,acc=0.2200
+i=57200,acc=0.2000
+i=57300,acc=0.1800
+i=57400,acc=0.2000
+i=57500,acc=0.1800
+i=57600,acc=0.1800
+i=57700,acc=0.1800
+i=57800,acc=0.2200
+i=57900,acc=0.2000
+i=58000,acc=0.2000
+
+i=58000,test_acc=0.9458
+
+i=58100,acc=0.1800
+i=58200,acc=0.1800
+i=58300,acc=0.1800
+i=58400,acc=0.2000
+i=58500,acc=0.1800
+i=58600,acc=0.2000
+i=58700,acc=0.1800
+i=58800,acc=0.2000
+i=58900,acc=0.1800
+i=59000,acc=0.2200
+
+i=59000,test_acc=0.9523
+
+i=59100,acc=0.2200
+i=59200,acc=0.2000
+i=59300,acc=0.2000
+i=59400,acc=0.1800
+i=59500,acc=0.2000
+i=59600,acc=0.1800
+i=59700,acc=0.1400
+i=59800,acc=0.2200
+i=59900,acc=0.1800
+i=60000,acc=0.2200
+
+i=60000,test_acc=0.9507
+
+i=60100,acc=0.2000
+i=60200,acc=0.1600
+i=60300,acc=0.2000
+i=60400,acc=0.1800
+i=60500,acc=0.1600
+i=60600,acc=0.1600
+i=60700,acc=0.2000
+i=60800,acc=0.2000
+i=60900,acc=0.2000
+i=61000,acc=0.2200
+
+i=61000,test_acc=0.9520
+
+i=61100,acc=0.2200
+i=61200,acc=0.2000
+i=61300,acc=0.2200
+i=61400,acc=0.1800
+i=61500,acc=0.1600
+i=61600,acc=0.2000
+i=61700,acc=0.1800
+i=61800,acc=0.2000
+i=61900,acc=0.2000
+i=62000,acc=0.1600
+
+i=62000,test_acc=0.9502
+
+i=62100,acc=0.2000
+i=62200,acc=0.2000
+i=62300,acc=0.2200
+i=62400,acc=0.2000
+i=62500,acc=0.2000
+i=62600,acc=0.1800
+i=62700,acc=0.2200
+i=62800,acc=0.1800
+i=62900,acc=0.2000
+i=63000,acc=0.2000
+
+i=63000,test_acc=0.9534
+
+i=63100,acc=0.2000
+i=63200,acc=0.2000
+i=63300,acc=0.1800
+i=63400,acc=0.1800
+i=63500,acc=0.1800
+i=63600,acc=0.2000
+i=63700,acc=0.2000
+i=63800,acc=0.2000
+i=63900,acc=0.2000
+i=64000,acc=0.2200
+
+i=64000,test_acc=0.9439
+
+i=64100,acc=0.2200
+i=64200,acc=0.2000
+i=64300,acc=0.2000
+i=64400,acc=0.1800
+i=64500,acc=0.1800
+i=64600,acc=0.2000
+i=64700,acc=0.2000
+i=64800,acc=0.2000
+i=64900,acc=0.2000
+i=65000,acc=0.2200
+
+i=65000,test_acc=0.9455
+
+i=65100,acc=0.2000
+i=65200,acc=0.2200
+i=65300,acc=0.2000
+i=65400,acc=0.1800
+i=65500,acc=0.2000
+i=65600,acc=0.1800
+i=65700,acc=0.2000
+i=65800,acc=0.1800
+i=65900,acc=0.2000
+i=66000,acc=0.2000
+
+i=66000,test_acc=0.9551
+
+i=66100,acc=0.2000
+i=66200,acc=0.2200
+i=66300,acc=0.1800
+i=66400,acc=0.2000
+i=66500,acc=0.2000
+i=66600,acc=0.1800
+i=66700,acc=0.2000
+i=66800,acc=0.2000
+i=66900,acc=0.1800
+i=67000,acc=0.2000
+
+i=67000,test_acc=0.9520
+
+i=67100,acc=0.2000
+i=67200,acc=0.2000
+i=67300,acc=0.2000
+i=67400,acc=0.1800
+i=67500,acc=0.1800
+i=67600,acc=0.2000
+i=67700,acc=0.2000
+i=67800,acc=0.2000
+i=67900,acc=0.2000
+i=68000,acc=0.2000
+
+i=68000,test_acc=0.9587
+
+i=68100,acc=0.1800
+i=68200,acc=0.1800
+i=68300,acc=0.2000
+i=68400,acc=0.2200
+i=68500,acc=0.2000
+i=68600,acc=0.1800
+i=68700,acc=0.2000
+i=68800,acc=0.1600
+i=68900,acc=0.2000
+i=69000,acc=0.1800
+
+i=69000,test_acc=0.9577
+
+i=69100,acc=0.2000
+i=69200,acc=0.2000
+i=69300,acc=0.2000
+i=69400,acc=0.2000
+i=69500,acc=0.2000
+i=69600,acc=0.2200
+i=69700,acc=0.1600
+i=69800,acc=0.1800
+i=69900,acc=0.2000
+i=70000,acc=0.2200
+
+i=70000,test_acc=0.9487
+
+i=70100,acc=0.2000
+i=70200,acc=0.1800
+i=70300,acc=0.2000
+i=70400,acc=0.2000
+i=70500,acc=0.2000
+i=70600,acc=0.1800
+i=70700,acc=0.2200
+i=70800,acc=0.2000
+i=70900,acc=0.2000
+i=71000,acc=0.1800
+
+i=71000,test_acc=0.9531
+
+i=71100,acc=0.2200
+i=71200,acc=0.1800
+i=71300,acc=0.1800
+i=71400,acc=0.2000
+i=71500,acc=0.2200
+i=71600,acc=0.2000
+i=71700,acc=0.1600
+i=71800,acc=0.2000
+i=71900,acc=0.2000
+i=72000,acc=0.2000
+
+i=72000,test_acc=0.9581
+
+i=72100,acc=0.2000
+i=72200,acc=0.1800
+i=72300,acc=0.2000
+i=72400,acc=0.2000
+i=72500,acc=0.2000
+i=72600,acc=0.2000
+i=72700,acc=0.2000
+i=72800,acc=0.2200
+i=72900,acc=0.2000
+i=73000,acc=0.2000
+
+i=73000,test_acc=0.9574
+
+i=73100,acc=0.2000
+i=73200,acc=0.2000
+i=73300,acc=0.2000
+i=73400,acc=0.2200
+i=73500,acc=0.2000
+i=73600,acc=0.2000
+i=73700,acc=0.2000
+i=73800,acc=0.2000
+i=73900,acc=0.2000
+i=74000,acc=0.1600
+
+i=74000,test_acc=0.9593
+
+i=74100,acc=0.2000
+i=74200,acc=0.2000
+i=74300,acc=0.2200
+i=74400,acc=0.2200
+i=74500,acc=0.2000
+i=74600,acc=0.2200
+i=74700,acc=0.2000
+i=74800,acc=0.1800
+i=74900,acc=0.1800
+i=75000,acc=0.1800
+
+i=75000,test_acc=0.9619
+
+i=75100,acc=0.1800
+i=75200,acc=0.2000
+i=75300,acc=0.2000
+i=75400,acc=0.2000
+i=75500,acc=0.1800
+i=75600,acc=0.2000
+i=75700,acc=0.1800
+i=75800,acc=0.2000
+i=75900,acc=0.2000
+i=76000,acc=0.2000
+
+i=76000,test_acc=0.9545
+
+i=76100,acc=0.2000
+i=76200,acc=0.2000
+i=76300,acc=0.2000
+i=76400,acc=0.2000
+i=76500,acc=0.2000
+i=76600,acc=0.1800
+i=76700,acc=0.1800
+i=76800,acc=0.2000
+i=76900,acc=0.1800
+i=77000,acc=0.2000
+
+i=77000,test_acc=0.9556
+
+i=77100,acc=0.2000
+i=77200,acc=0.2000
+i=77300,acc=0.1800
+i=77400,acc=0.1800
+i=77500,acc=0.1600
+i=77600,acc=0.2000
+i=77700,acc=0.1800
+i=77800,acc=0.2000
+i=77900,acc=0.2000
+i=78000,acc=0.1800
+
+i=78000,test_acc=0.9578
+
+i=78100,acc=0.2000
+i=78200,acc=0.2000
+i=78300,acc=0.2000
+i=78400,acc=0.2000
+i=78500,acc=0.1600
+i=78600,acc=0.2000
+i=78700,acc=0.1800
+i=78800,acc=0.1800
+i=78900,acc=0.1800
+i=79000,acc=0.1600
+
+i=79000,test_acc=0.9616
+
+i=79100,acc=0.2000
+i=79200,acc=0.2000
+i=79300,acc=0.1600
+i=79400,acc=0.2200
+i=79500,acc=0.2000
+i=79600,acc=0.1800
+i=79700,acc=0.1800
+i=79800,acc=0.2000
+i=79900,acc=0.2000
+i=80000,acc=0.2000
+
+i=80000,test_acc=0.9650
+
+i=80100,acc=0.1600
+i=80200,acc=0.2000
+i=80300,acc=0.1800
+i=80400,acc=0.1800
+i=80500,acc=0.1800
+i=80600,acc=0.2200
+i=80700,acc=0.2000
+i=80800,acc=0.2000
+i=80900,acc=0.1800
+i=81000,acc=0.1800
+
+i=81000,test_acc=0.9590
+
+i=81100,acc=0.2000
+i=81200,acc=0.1800
+i=81300,acc=0.2000
+i=81400,acc=0.2000
+i=81500,acc=0.1800
+i=81600,acc=0.2000
+i=81700,acc=0.2000
+i=81800,acc=0.2000
+i=81900,acc=0.2000
+i=82000,acc=0.2000
+
+i=82000,test_acc=0.9645
+
+i=82100,acc=0.2200
+i=82200,acc=0.2200
+i=82300,acc=0.2200
+i=82400,acc=0.1800
+i=82500,acc=0.1800
+i=82600,acc=0.1800
+i=82700,acc=0.2000
+i=82800,acc=0.2000
+i=82900,acc=0.2000
+i=83000,acc=0.2000
+
+i=83000,test_acc=0.9636
+
+i=83100,acc=0.2000
+i=83200,acc=0.2000
+i=83300,acc=0.2000
+i=83400,acc=0.2000
+i=83500,acc=0.2000
+i=83600,acc=0.2000
+i=83700,acc=0.1600
+i=83800,acc=0.2000
+i=83900,acc=0.2000
+i=84000,acc=0.2000
+
+i=84000,test_acc=0.9581
+
+i=84100,acc=0.2000
+i=84200,acc=0.2000
+i=84300,acc=0.2000
+i=84400,acc=0.2000
+i=84500,acc=0.2000
+i=84600,acc=0.2000
+i=84700,acc=0.1800
+i=84800,acc=0.2000
+i=84900,acc=0.2000
+i=85000,acc=0.2000
+
+i=85000,test_acc=0.9640
+
+i=85100,acc=0.2000
+i=85200,acc=0.1800
+i=85300,acc=0.1800
+i=85400,acc=0.2000
+i=85500,acc=0.2200
+i=85600,acc=0.1800
+i=85700,acc=0.2000
+i=85800,acc=0.2000
+i=85900,acc=0.2000
+i=86000,acc=0.2000
+
+i=86000,test_acc=0.9573
+
+i=86100,acc=0.2000
+i=86200,acc=0.1800
+i=86300,acc=0.2200
+i=86400,acc=0.2000
+i=86500,acc=0.2000
+i=86600,acc=0.2000
+i=86700,acc=0.2000
+i=86800,acc=0.2000
+i=86900,acc=0.2000
+i=87000,acc=0.2000
+
+i=87000,test_acc=0.9625
+
+i=87100,acc=0.2000
+i=87200,acc=0.2000
+i=87300,acc=0.2000
+i=87400,acc=0.2200
+i=87500,acc=0.2000
+i=87600,acc=0.2000
+i=87700,acc=0.2000
+i=87800,acc=0.2000
+i=87900,acc=0.2000
+i=88000,acc=0.1800
+
+i=88000,test_acc=0.9621
+
+i=88100,acc=0.1800
+i=88200,acc=0.2000
+i=88300,acc=0.2000
+i=88400,acc=0.2000
+i=88500,acc=0.2000
+i=88600,acc=0.2000
+i=88700,acc=0.2000
+i=88800,acc=0.2000
+i=88900,acc=0.2000
+i=89000,acc=0.1800
+
+i=89000,test_acc=0.9614
+
+i=89100,acc=0.2200
+i=89200,acc=0.2000
+i=89300,acc=0.2000
+i=89400,acc=0.1800
+i=89500,acc=0.2000
+i=89600,acc=0.2000
+i=89700,acc=0.2000
+i=89800,acc=0.1800
+i=89900,acc=0.2000
+i=90000,acc=0.2000
+
+i=90000,test_acc=0.9600
+
+i=90100,acc=0.2000
+i=90200,acc=0.1600
+i=90300,acc=0.2000
+i=90400,acc=0.1800
+i=90500,acc=0.2000
+i=90600,acc=0.2000
+i=90700,acc=0.2000
+i=90800,acc=0.2000
+i=90900,acc=0.2000
+i=91000,acc=0.2000
+
+i=91000,test_acc=0.9642
+
+i=91100,acc=0.2000
+i=91200,acc=0.1800
+i=91300,acc=0.2000
+i=91400,acc=0.2000
+i=91500,acc=0.1800
+i=91600,acc=0.1600
+i=91700,acc=0.2000
+i=91800,acc=0.2000
+i=91900,acc=0.2000
+i=92000,acc=0.2000
+
+i=92000,test_acc=0.9628
+
+i=92100,acc=0.1800
+i=92200,acc=0.2000
+i=92300,acc=0.2000
+i=92400,acc=0.2000
+i=92500,acc=0.2000
+i=92600,acc=0.2000
+i=92700,acc=0.2000
+i=92800,acc=0.1800
+i=92900,acc=0.2000
+i=93000,acc=0.1600
+
+i=93000,test_acc=0.9614
+
+i=93100,acc=0.2000
+i=93200,acc=0.2000
+i=93300,acc=0.1800
+i=93400,acc=0.2000
+i=93500,acc=0.2000
+i=93600,acc=0.1600
+i=93700,acc=0.2000
+i=93800,acc=0.2200
+i=93900,acc=0.2000
+i=94000,acc=0.1800
+
+i=94000,test_acc=0.9637
+
+i=94100,acc=0.2000
+i=94200,acc=0.1600
+i=94300,acc=0.2200
+i=94400,acc=0.1800
+i=94500,acc=0.2000
+i=94600,acc=0.2000
+i=94700,acc=0.2000
+i=94800,acc=0.2200
+i=94900,acc=0.2000
+i=95000,acc=0.2200
+
+i=95000,test_acc=0.9629
+
+i=95100,acc=0.2000
+i=95200,acc=0.2000
+i=95300,acc=0.1600
+i=95400,acc=0.2200
+i=95500,acc=0.1800
+i=95600,acc=0.2000
+i=95700,acc=0.1800
+i=95800,acc=0.2000
+i=95900,acc=0.2200
+i=96000,acc=0.1800
+
+i=96000,test_acc=0.9652
+
+i=96100,acc=0.1800
+i=96200,acc=0.2000
+i=96300,acc=0.2000
+i=96400,acc=0.1800
+i=96500,acc=0.2000
+i=96600,acc=0.1800
+i=96700,acc=0.1800
+i=96800,acc=0.2000
+i=96900,acc=0.2000
+i=97000,acc=0.2200
+
+i=97000,test_acc=0.9637
+
+i=97100,acc=0.1800
+i=97200,acc=0.2000
+i=97300,acc=0.2000
+i=97400,acc=0.1800
+i=97500,acc=0.2000
+i=97600,acc=0.2000
+i=97700,acc=0.1800
+i=97800,acc=0.1800
+i=97900,acc=0.2000
+i=98000,acc=0.2000
+
+i=98000,test_acc=0.9646
+
+i=98100,acc=0.2000
+i=98200,acc=0.2000
+i=98300,acc=0.2000
+i=98400,acc=0.2000
+i=98500,acc=0.2000
+i=98600,acc=0.2000
+i=98700,acc=0.2000
+i=98800,acc=0.2000
+i=98900,acc=0.2000
+i=99000,acc=0.1800
+
+i=99000,test_acc=0.9650
+
+i=99100,acc=0.2000
+i=99200,acc=0.1600
+i=99300,acc=0.1800
+i=99400,acc=0.1800
+i=99500,acc=0.2000
+i=99600,acc=0.2000
+i=99700,acc=0.2000
+i=99800,acc=0.1800
+i=99900,acc=0.1800
+
+test_acc=0.9646
+
