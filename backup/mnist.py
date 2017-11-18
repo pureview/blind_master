@@ -77,18 +77,6 @@ def main():
     dump.write('#configure: vector=False,batch_size=%d,drop_prob=%.4f,mistake_rate=%.4f\n'%(batch_size,drop_prob,mistake_rate))
     ######################################################################
     mnist = input_data.read_data_sets(args.data_dir, one_hot=True)
-    # mistake mnist
-    mistake_num=int(mistake_rate*len(mnist.train.labels))
-    m_inds=random.sample(list(range(len(mnist.train.labels))),mistake_num)
-    for m_ind in m_inds:
-        origin_label=mnist.train.labels[m_ind]
-        origin_label=np.argmax(origin_label)
-        mnist.train.labels[m_ind][origin_label]=0
-        all_labels=list(range(num_label))
-        all_labels.remove(origin_label)
-        m_label=np.random.choice(all_labels)
-        mnist.train.labels[m_ind][m_label]=1
-
     x = tf.placeholder(tf.float32, [None, 784])
     y_ = tf.placeholder(tf.float32, [None, 10])
     y_conv, keep_prob = deepnn(x,out_dim=10)
@@ -107,6 +95,17 @@ def main():
         for i in range(args.num_iter):
             batch = mnist.train.next_batch(batch_size)
             np_labels=batch[1].copy()
+            mistake_num=int(mistake_rate*batch_size)
+            m_inds=random.sample(list(range(batch_size)),mistake_num)
+            for m_ind in m_inds:
+                origin_label=batch[1][m_ind]
+                origin_label=np.argmax(origin_label)
+                np_labels[m_ind][origin_label]=0
+                all_labels=list(range(num_label))
+                all_labels.remove(origin_label)
+                m_label=np.random.choice(all_labels)
+                np_labels[m_ind][m_label]=1
+
             if i % 100 == 0:
                 train_accuracy = accuracy.eval(feed_dict={
                     x: batch[0], y_: np_labels, keep_prob: 1.0})
@@ -151,19 +150,6 @@ def vector_loss():
     dump.write('#configure: vector=True,out_dim=%d,batch_size=%d,drop_prob=%.4f,mistake_rate=%.4f,dynamic_lr=%d\n'%(out_dim,batch_size,drop_prob,mistake_rate,args.dynamic_lr))
     #################################################################
     mnist = input_data.read_data_sets(args.data_dir, one_hot=False)
-
-    #-------------------------------------------------------------------#
-    mistake_num=int(mistake_rate*len(mnist.train.labels))
-    m_inds=random.sample(list(range(mnist.train.labels)),mistake_num)
-    if debug_mode: assert len(m_inds)==batch_size,str(m_inds)
-    for m_ind in m_inds:
-        origin_label=mnist.train.labels[m_ind]
-        all_labels=list(range(num_label))
-        all_labels.remove(origin_label)
-        m_label=np.random.choice(all_labels)
-        mnist.train.labels[m_ind]=m_label
-    #----------------------------------------------------------------------#
-
     x = tf.placeholder(tf.float32, [None, 784])
     y_ = tf.placeholder(tf.float32, [None, out_dim])
     y_conv, keep_prob = deepnn(x,out_dim=out_dim)
@@ -184,6 +170,22 @@ def vector_loss():
             np_labels=batch[1].copy()
             ############################################################################
             # choose inds
+            mistake_num=int(mistake_rate*batch_size)
+            m_inds=random.sample(list(range(batch_size)),mistake_num)
+            ############################################################################
+            #print('len(m_inds)',len(m_inds))
+            if debug_mode: assert len(m_inds)==batch_size,str(m_inds)
+            for m_ind in m_inds:
+                origin_label=batch[1][m_ind]
+                all_labels=list(range(num_label))
+                all_labels.remove(origin_label)
+                if debug_mode: assert origin_label not in all_labels,str(all_labels)
+                m_label=np.random.choice(all_labels)
+                if debug_mode: assert m_label!=origin_label
+                #embed()
+                np_labels[m_ind]=m_label
+                assert np_labels[m_ind]!=batch[1][m_ind]
+            #if debug_mode:print(np_labels);embed();exit()
             input_np_labels=np.zeros([batch_size,out_dim])
             for batch_ind in range(batch_size):
                 cur_label=np_labels[batch_ind]
@@ -269,15 +271,14 @@ if __name__ == '__main__':
     parser.add_argument('-out_dim',type=int,default=100,help='specify output dimension, note that has to be times of 10.')
     parser.add_argument('-drop_prob',type=float,default=1.,help='specify dropout probability')
     parser.add_argument('-mistake',type=float,default=0.,help='specify mistake rate')
-    parser.add_argument('-gpu',type=str,default='',help='Specify gpu to use')
+    parser.add_argument('-gpu',type=str,default='0',help='Specify gpu to use')
     parser.add_argument('-file',type=str,default='experiment',help='specify the name to write experiment result')
     parser.add_argument('-lr',type=float,default=0.0001,help='specify learning rate')
     parser.add_argument('-dynamic_lr',action='store_true',help='specify to open dynamic learning rate mode on')
     parser.add_argument('-random',action='store_true',help='specify whether enable random gradient')
     parser.add_argument('-num_iter',type=int,default=30000,help='specify max iter')
     args=parser.parse_args()
-    if args.gpu!='':
-        os.environ["CUDA_VISIBLE_DEVICES"]=args.gpu
+    os.environ["CUDA_VISIBLE_DEVICES"]=args.gpu
     # closure get command-line args
     if args.vector:
         vector_loss()
